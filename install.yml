@@ -14,11 +14,14 @@
     - mongodb
     - mysql
     cask_packages:
+    - google-chrome
+    - firefox
     - skype
     - sourcetree
     - utorrent
     - dropbox
     - macvim
+    - majic
     - vagrant
     - virtualbox
     - sequel-pro
