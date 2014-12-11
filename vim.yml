@@ -19,6 +19,8 @@
     git: repo=https://github.com/ervandew/supertab.git dest=~/.janus/supertab
   - name: Install closetag plugin
     git: repo=https://github.com/docunext/closetag.vim.git dest=~/.janus/closetag
+  - name: Install DBGPavim plugin
+    git: repo=https://github.com/brookhong/DBGPavim.git dest=~/.janus/DBGPavim
   - name: Copy vimrc.after
     template: src=templates/vim/vimrc.after dest=~/.vimrc.after
   - name: Copy vimrc.before

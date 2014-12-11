@@ -2,6 +2,9 @@ color pyte
 set t_Co=256
 set linespace=2
 
+let g:dbgPavimPort = 9000
+let g:dbgPavimBreakAtEntry = 0
+
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype php setlocal ts=4 sw=4 sts=0 noexpandtab
