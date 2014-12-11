@@ -30,5 +30,5 @@
     - cyberduck
     - rdm
     - mongodbpreferencepane
-    - font-inconsolata
-    - font-source-code-pro
+    # - font-inconsolata
+    # - font-source-code-pro
