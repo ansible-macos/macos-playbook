@@ -1,0 +1,28 @@
+---
+# Here we describe every software we may want to install
+- hosts: all
+  roles:
+  - role: osxc.packages
+    brew_taps:
+    - caskroom/fonts
+    brew_packages:
+    - git
+    - zsh
+    - vim
+    - the_silver_searcher
+    - ctags
+    - mongodb
+    - mysql
+    cask_packages:
+    - skype
+    - sourcetree
+    - utorrent
+    - dropbox
+    - macvim
+    - vagrant
+    - virtualbox
+    - sequel-pro
+    - robomongo
+    - mongodbpreferencepane
+    - font-inconsolata
+    - font-source-code-pro

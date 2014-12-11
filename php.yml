@@ -1,0 +1,30 @@
+- hosts: all
+  roles:
+  - role: osxc.packages
+    brew_taps:
+    - homebrew/php
+    - homebrew/dupes
+    - homebrew/versions
+    brew_packages:
+    - php56
+    - php56-oauth
+    - php56-amqp
+    - php56-redis
+    - php56-mongo
+    - php56-solr
+    - php56-ssh2
+    - php56-http
+    - php56-uuid
+    - php56-xdebug
+    - php56-memcache
+    - php56-memcached
+    - php-cs-fixer
+    - php-code-sniffer
+    - phploc
+    - phpmd
+    - phpcpd
+    - behat
+    - phpunit
+    - codeception
+    - icu4c
+    - composer

@@ -1,0 +1,21 @@
+color pyte
+set t_Co=256
+
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype php setlocal ts=4 sw=4 sts=0 noexpandtab
+autocmd Filetype markdown setlocal ts=4 sw=4 sts=0 noexpandtab
+
+nmap <leader>f :NERDTreeFind<CR>
+nmap <leader>d :!git difftool -y -t Kaleidoscope<CR>
+
+" CtrlP "
+set wildignore+=
+ \*/cookbooks/*,
+ \*/node_modules/*,
+ \*/Symfony/vendor/*,
+ \*/cache/*,
+ \*/tmp/*,
+ \*.so,
+ \*.swp,
+ \*.zip,

@@ -1,0 +1,15 @@
+---
+- hosts: all
+  roles:
+  - role: osxc.packages
+    brew_packages:
+    - ruby
+  tasks:
+    - name: ensure librarian-chef is installed
+      gem: name=librarian-chef
+    - name: ensure chef is installed
+      gem: name=chef
+    - name: ensure knife-solo is installed
+      gem: name=knife-solo
+    - name: ensure capistrano is installed
+      gem: name=capistrano

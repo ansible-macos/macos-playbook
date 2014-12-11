@@ -1,0 +1,10 @@
+---
+- hosts: all
+  vars:
+    user_email: luis.munoz.hdez@gmail.com
+    user_name: Luis Hdez
+  tasks:
+    - name: Copy global gitconfig
+      template: src=gitconfig dest=~/.gitconfig
+    - name: Copy global gitignore
+      template: src=gitignore dest=~/.gitignore

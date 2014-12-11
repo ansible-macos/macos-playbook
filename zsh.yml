@@ -1,0 +1,10 @@
+---
+# Configure your freshly installed software
+- hosts: all
+  tasks:
+    - name: Install zsh from repository
+      git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh/
+    - name: Copy zshrc
+      template: src=templates/zsh/zshrc dest=~/.zshrc
+    - name: Make zsh as default terminal
+      command: chsh -s /bin/zsh
