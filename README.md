@@ -25,3 +25,10 @@ Use the next commands to install ansible and run the playbooks
 If you want to run only the specific playbooks, you can use
 
     ansible-playbook {{name}}.yml
+
+## Common problems
+
+If while running the install.yml playbook some of the casks are missing try to run:
+
+    brew update && brew upgrade brew-cask
+
