@@ -1,0 +1,12 @@
+# @todo link from Dropbox
+---
+- hosts: all
+  tasks:
+    - name: Ensure 600 for ~/.ssh/id_rsa
+      command: chmod 600 ~/.ssh/id_rsa
+    - name: Ensure 600 for ~/.ssh/id_rsa.pub
+      command: chmod 600 ~/.ssh/id_rsa.pub
+    - name: Ensure 600 for ~/.ssh/known_hosts
+      command: chmod 600 ~/.ssh/known_hosts
+    - name: Ensure 755 for ~/.ssh
+      command: chmod 755 ~/.ssh
