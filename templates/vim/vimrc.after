@@ -1,5 +1,6 @@
 color pyte
 set t_Co=256
+set linespace=2
 
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab

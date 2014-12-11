@@ -12,7 +12,7 @@
     git: repo=https://github.com/airblade/vim-gitgutter.git dest=~/.janus/vim-gitgutter
 
   - name: Install vim-less
-    git: repo=https://github.com/groenewege/vim-less.git dest=~/.janus/vim-gitgutter
+    git: repo=https://github.com/groenewege/vim-less.git dest=~/.janus/vim-less
 
   - name: Install vim-twig
     git: repo=https://github.com/evidens/vim-twig.git dest=~/.janus/vim-twig
@@ -20,8 +20,12 @@
   - name: Install vim-css-color
     git: repo=https://github.com/ap/vim-css-color.git dest=~/.janus/vim-css-color
 
+  - name: Install delimit Mate
+    git: repo=https://github.com/Raimondi/delimitMate.git dest=~/.janus/delimitMate
+
   - name: Copy vimrc.after
     template: src=templates/vim/vimrc.after dest=~/.vimrc.after
 
   - name: Copy vimrc.before
     template: src=templates/vim/vimrc.before dest=~/.vimrc.before
+
