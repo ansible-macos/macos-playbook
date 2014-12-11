@@ -5,6 +5,6 @@
     user_name: Luis Hdez
   tasks:
     - name: Copy global gitconfig
-      template: src=gitconfig dest=~/.gitconfig
+      template: src=templates/git/gitconfig dest=~/.gitconfig
     - name: Copy global gitignore
-      template: src=gitignore dest=~/.gitignore
+      template: src=templates/git/gitignore dest=~/.gitignore
