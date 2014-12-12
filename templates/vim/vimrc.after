@@ -1,6 +1,6 @@
 " GUI "
 set t_Co=256
-set guifont=Source\ Code\ Pro:h14
+set guifont=Sacude\ Code\ Powerline:h15
 set linespace=2
 color pyte
 
@@ -10,7 +10,13 @@ autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype php setlocal ts=4 sw=4 sts=0 noexpandtab
 autocmd Filetype markdown setlocal ts=4 sw=4 sts=0 noexpandtab
 
-" Custom Mappings "
+" Move Mappings "
+nmap <S-Down> 5j
+nmap <S-Up> 5k
+vmap <S-Down> 5j
+vmap <S-Up> 5k
+
+" Plugin mappings "
 nmap <leader>f :NERDTreeFind<CR>
 nmap <leader>d :!git difftool -y -t Kaleidoscope<CR>
 
