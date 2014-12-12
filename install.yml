@@ -8,7 +8,8 @@
     brew_packages:
     - git
     - zsh
-    - vim
+    - lua
+    - vim # --with-lua
     - the_silver_searcher
     - ctags
     - mongodb
@@ -22,7 +23,7 @@
     - utorrent
     - mplayerx
     - dropbox
-    - macvim
+    - macvim # --with-cscope --with-lua --override-system-vim --HEAD
     - majic
     - vagrant
     - virtualbox
@@ -32,4 +33,5 @@
     - rdm
     - mongodbpreferencepane
     - font-inconsolata
-    # - font-source-code-pro
+    - font-source-code-pro
+    - font-sauce-code-powerline
