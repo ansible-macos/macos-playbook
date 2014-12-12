@@ -7,8 +7,12 @@ An Ansible Playbook for web developers using OS X
 Use the next commands to install ansible and run the playbooks
 
 ### Install XCode Command-Line tools
- 
+
     xcode-select --install
+
+### Install pip in OSX
+
+    sudo easy_install pip
 
 ### Install ansible
 
@@ -17,6 +21,7 @@ Use the next commands to install ansible and run the playbooks
 ### Install ansible requirements
 
     ansible-galaxy install -r requirements.yml
+    chmod -x ./inventory
 
 ### Run the playbook
 

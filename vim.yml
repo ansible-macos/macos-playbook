@@ -25,3 +25,5 @@
     template: src=templates/vim/vimrc.after dest=~/.vimrc.after
   - name: Copy vimrc.before
     template: src=templates/vim/vimrc.before dest=~/.vimrc.before
+  - name: Copy gvimrc.after
+    template: src=templates/vim/gvimrc.after dest=~/.gvimrc.after

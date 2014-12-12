@@ -20,7 +20,6 @@
     - php56-xdebug
     - php56-memcache
     - php56-memcached
-    - php-cs-fixer
     - php-code-sniffer
     - phploc
     - phpmd

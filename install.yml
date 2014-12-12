@@ -16,6 +16,7 @@
     cask_packages:
     - google-chrome
     - firefox
+    - flash-player
     - skype
     - sourcetree
     - utorrent
