@@ -1,8 +1,10 @@
 " GUI "
 set t_Co=256
+set term=screen-256color
+set background=dark
+color base16-ocean
 set guifont=Sacude\ Code\ Powerline:h15
 set linespace=2
-color pyte
 
 " FileTypes "
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
