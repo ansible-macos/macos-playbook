@@ -26,3 +26,7 @@ Thumbs.db
 
 # Ideas
 .idea
+
+# Vim
+.phpcomplete_extended
+
