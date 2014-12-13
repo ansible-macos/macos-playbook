@@ -3,28 +3,60 @@
   tasks:
   - name: Install vim janus
     git: repo=https://github.com/carlhuda/janus.git dest=~/.vim/
+
+  # Basics
   - name: Install vim-airline
     git: repo=https://github.com/bling/vim-airline.git dest=~/.janus/vim-airline
   - name: Install vim-gitgutter
     git: repo=https://github.com/airblade/vim-gitgutter.git dest=~/.janus/vim-gitgutter
+  - name: Install delimit Mate
+    git: repo=https://github.com/Raimondi/delimitMate.git dest=~/.janus/delimitMate
+  - name: Install closetag plugin
+    git: repo=https://github.com/docunext/closetag.vim.git dest=~/.janus/closetag
+
+  # Syntaxes
   - name: Install vim-less
     git: repo=https://github.com/groenewege/vim-less.git dest=~/.janus/vim-less
   - name: Install vim-twig
     git: repo=https://github.com/evidens/vim-twig.git dest=~/.janus/vim-twig
-  - name: Install vim-css-color
-    git: repo=https://github.com/ap/vim-css-color.git dest=~/.janus/vim-css-color
-  - name: Install delimit Mate
-    git: repo=https://github.com/Raimondi/delimitMate.git dest=~/.janus/delimitMate
+
+    # Autocompletion
   - name: Install supertab plugin
     git: repo=https://github.com/ervandew/supertab.git dest=~/.janus/supertab
-  - name: Install closetag plugin
-    git: repo=https://github.com/docunext/closetag.vim.git dest=~/.janus/closetag
+  - name: Install unite plugin
+    git: repo=https://github.com/Shougo/unite.vim.git dest=~/.janus/unite
+  - name: Install vimproc plugin
+    git: repo=https://github.com/Shougo/vimproc.vim.git dest=~/.janus/vimproc
+  - name: Build vimproc plugin
+    command: "cd ~/.janus/vimproc && make -f make_mac.mak"
+  - name: Install neocomplete plugin
+    git: repo=https://github.com/Shougo/neocomplete.vim.git dest=~/.janus/neocomplete
+  - name: Install neosnippet plugin
+    git: repo=https://github.com/Shougo/neosnippet.vim.git dest=~/.janus/neosnippet
+  - name: Install neosnippet-snippets plugin
+    git: repo=https://github.com/Shougo/neosnippet-snippets.git dest=~/.janus/neosnippet-snippets
+
+    # PHP Plugins
+  - name: Install phpcomplete-extended plugin
+    git: repo=https://github.com/m2mdas/phpcomplete-extended.git dest=~/.janus/phpcomplete-extended
+  - name: Install phpcomplete-extended-symfony plugin
+    git: repo=https://github.com/m2mdas/phpcomplete-extended-symfony.git dest=~/.janus/phpcomplete-extended-symfony
   - name: Install PVD
     git: repo=https://github.com/tobyS/pdv.git dest=~/.janus/pvd
-  - name: Install closetag plugin
-    git: repo=https://github.com/docunext/closetag.vim.git dest=~/.janus/closetag
   - name: Install DBGPavim plugin
     git: repo=https://github.com/brookhong/DBGPavim.git dest=~/.janus/DBGPavim
+  - name: Install vim-php-cs-fixer plugin
+    git: repo=https://github.com/stephpy/vim-php-cs-fixer dest=~/.janus/vim-php-cs-fixer
+  - name: Install phpfolding plugin
+    git: repo=https://github.com/vim-scripts/phpfolding.vim dest=~/.janus/phpfolding
+  - name: Install phpmanual plugin
+    git: repo=https://github.com/vim-scripts/phpmanual dest=~/.janus/phpmanual
+
+    # HTML and CSS
+  - name: Install vim-css-color
+    git: repo=https://github.com/ap/vim-css-color.git dest=~/.janus/vim-css-color
+
+    # Settings
   - name: Copy vimrc.after
     template: src=templates/vim/vimrc.after dest=~/.vimrc.after
   - name: Copy vimrc.before
