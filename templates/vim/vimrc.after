@@ -6,6 +6,10 @@ color base16-ocean
 set guifont=Source\ Code\ Pro\ For\ Powerline:h14
 set linespace=2
 
+" Set ruler mark "
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%80v', 100)
+
 " FileTypes "
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
@@ -46,3 +50,25 @@ set wildignore+=
  \*.so,
  \*.swp,
  \*.zip,
+
+" vim-trailing-whitespace "
+let g:extra_whitespace_ignored_filetypes = ['unite']
+
+" neocomplete "
+" https://github.com/Shougo/neocomplete.vim/blob/master/README.md "
+let g:acp_enableAtStartup = 0
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+" phpcomplete-extended "
+" let g:phpcomplete_index_composer_command='/usr/local/bin/composer'
+" autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
+
