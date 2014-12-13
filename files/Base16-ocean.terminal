@@ -420,6 +420,8 @@
 	<false/>
 	<key>UseBrightBold</key>
 	<false/>
+	<key>columnCount</key>
+	<integer>130</integer>
 	<key>name</key>
 	<string>Base16-ocean</string>
 	<key>type</key>
