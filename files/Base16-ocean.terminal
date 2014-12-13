@@ -300,7 +300,7 @@
 	AAAAAAIBAAAAAAAAAC0AAAAAAAAAAAAAAAAAAAQG
 	</data>
 	<key>BackgroundBlur</key>
-	<real>0.0</real>
+	<real>1</real>
 	<key>BackgroundColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
@@ -335,7 +335,7 @@
 	<key>FontAntialias</key>
 	<true/>
 	<key>FontHeightSpacing</key>
-	<real>1.05</real>
+	<real>1.1000000000000001</real>
 	<key>ProfileCurrentVersion</key>
 	<real>2.04</real>
 	<key>SelectionColor</key>
@@ -364,6 +364,8 @@
 	7ADyAPQA9gD7AQMDewN9A4IDjQOWA6QDqAOvA7gDvQPKA80D2gPfA+cD6gP8A/8EBAAA
 	AAAAAAIBAAAAAAAAAC0AAAAAAAAAAAAAAAAAAAQG
 	</data>
+	<key>ShouldLimitScrollback</key>
+	<integer>1</integer>
 	<key>TextBoldColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGKSpYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
