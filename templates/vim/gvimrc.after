@@ -1,8 +1,0 @@
-" GUI "
-set t_Co=256
-set guifont=Source\ Code\ Pro\ For\ Powerline:h14
-set linespace=2
-color base16-ocean
-colorscheme base16-ocean
-set background=dark
-

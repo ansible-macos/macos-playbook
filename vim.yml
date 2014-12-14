@@ -47,8 +47,6 @@
     git: repo=https://github.com/brookhong/DBGPavim.git dest=~/.janus/DBGPavim
   - name: Install vim-php-cs-fixer plugin
     git: repo=https://github.com/stephpy/vim-php-cs-fixer dest=~/.janus/vim-php-cs-fixer
-  - name: Install phpfolding plugin
-    git: repo=https://github.com/vim-scripts/phpfolding.vim dest=~/.janus/phpfolding
   - name: Install phpmanual plugin
     git: repo=https://github.com/vim-scripts/phpmanual dest=~/.janus/phpmanual
 
@@ -57,9 +55,10 @@
     git: repo=https://github.com/ap/vim-css-color.git dest=~/.janus/vim-css-color
 
     # Settings
+  - name: Creates .vim.settings directory
+    file: path=~/.vim.settings state=directory
   - name: Copy vimrc.after
     template: src=templates/vim/vimrc.after dest=~/.vimrc.after
   - name: Copy vimrc.before
     template: src=templates/vim/vimrc.before dest=~/.vimrc.before
-  - name: Copy gvimrc.after
-    template: src=templates/vim/gvimrc.after dest=~/.gvimrc.after
+
