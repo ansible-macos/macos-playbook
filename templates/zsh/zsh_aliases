@@ -2,6 +2,7 @@
 # Paths
 alias dt="cd ~/Desktop"
 alias dl="cd ~/Downloads"
+alias dl="cd ~/Documents"
 alias db="cd ~/Dropbox"
 
 # Services
