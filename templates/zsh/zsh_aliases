@@ -1,0 +1,51 @@
+
+# Paths
+alias dt="cd ~/Desktop"
+alias dl="cd ~/Downloads"
+alias db="cd ~/Dropbox"
+
+# Services
+alias h="history"
+alias j="jobs"
+alias v="vim"
+alias o="open"
+alias oo="open ."
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
+alias localip="ipconfig getifaddr en1"
+
+# Delete Tools
+alias ds_remove="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Finder tools
+alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
+
+# Tasks
+alias badge="tput bel" # Useful for long tasks it alerts on terminal on finish
+
+# Screenshots
+alias disableScreenShadow="defaults write com.apple.screencapture disable-shadow -bool true"
+alias enableScreenShadow="defaults write com.apple.screencapture disable-shadow -bool false"
+
+# PHP Aliases
+alias phpcs_symfony2="phpcs --config-set default_standard Symfony2"
+alias phpcs_PSR2="phpcs --config-set default_standard PSR2"
+alias phpcs_PSR1="phpcs --config-set default_standard PSR1"
+
+# Git status
+alias gs="git status --short"
+alias gss="git status"
+alias gall='git add -u .'
+alias gamend='git commit --amend -m'
+alias gupmod='git commit -m "Update submodule"'
+alias gc='git checkout'
+alias gcb='git checkout -b'
+alias gb='git branch -a'
+alias greset='git reset --hard'
+alias gl='git log --graph --pretty=format:"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)" --abbrev-commit --date=relative'
+alias gls='git log --pretty=format:"%h - %an, %ar : %s" -n 20'
+alias gsubpull='git pull && git submodule init && git submodule update && git submodule status'
+alias giff='git difftool'

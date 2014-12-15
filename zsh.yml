@@ -6,5 +6,7 @@
       git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh/
     - name: Copy zshrc
       template: src=templates/zsh/zshrc dest=~/.zshrc
+    - name: Copy zsh_aliases
+      template: src=templates/zsh/zsh_aliases dest=~/.zsh_aliases
     - name: Make zsh as default terminal
       command: chsh -s /bin/zsh
