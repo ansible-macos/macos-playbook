@@ -14,4 +14,5 @@ let g:unite_source_rec_async_command='ag --nocolor --nogroup --ignore ".tmp" --i
 " Desc: Map command for file search with fuzzyfinder style by default it
 " searchs only if not present in .gitignore
 "
-noremap <Leader>f :Unite -start-insert file_rec/async:!<CR>
+noremap <Leader>0 :Unite -start-insert file_rec/async:!<CR>
+noremap <Leader>9 :Unite -start-insert<CR>

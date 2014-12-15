@@ -65,4 +65,5 @@
     template: src=templates/vim/vimrc.after dest=~/.vimrc.after
   - name: Copy vimrc.before
     template: src=templates/vim/vimrc.before dest=~/.vimrc.before
-
+  - name: Copy plugin.unite.vim
+    template: src=templates/vim/plugin.unite.vim dest=~/.vim.settings/plugin.unite.vim
