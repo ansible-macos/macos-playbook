@@ -32,6 +32,11 @@
   tasks:
     - name: Copy php.ini settings
       template: src=templates/php/php.ini dest=/usr/local/etc/php/5.6/conf.d/php.user.ini
-  tasks:
     - name: Copy php.ini settings
       template: src=templates/php/ext-xdebug.ini dest=/usr/local/etc/php/5.6/conf.d/ext-xdebug.ini
+    - name: Downlad phpcs Symfony2
+      git: repo=https://github.com/escapestudios/Symfony2-coding-standard.git dest=/usr/local/Cellar/php-code-sniffer/1.5.6/CodeSniffer/Standards/Symfony2
+    - name: Copy php.ini settings
+      template: src=templates/php/php.ini dest=/usr/local/etc/php/5.6/conf.d/php.user.ini
+    - name: Set PSR2 as default
+      command: phpcs --config-set default_standard PSR2
