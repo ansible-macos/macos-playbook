@@ -1,10 +1,17 @@
-" GUI "
+"
+" GUI
+"
 set t_Co=256
 set term=screen-256color
 set background=dark
 color base16-ocean
 set guifont=Source\ Code\ Pro\ For\ Powerline:h14
 set linespace=2
+
+"
+" Editing
+"
+set timeoutlen=250
 
 " Set ruler mark "
 highlight ColorColumn ctermbg=magenta
@@ -17,10 +24,10 @@ autocmd Filetype php setlocal ts=4 sw=4 sts=0 noexpandtab
 autocmd Filetype markdown setlocal ts=4 sw=4 sts=0 noexpandtab
 
 " Move Mappings "
-nmap <S-Down> 5j
-nmap <S-Up> 5k
-vmap <S-Down> 5j
-vmap <S-Up> 5k
+nnoremap <S-Down> 5j
+nnoremap <S-Up> 5k
+vnoremap <S-Down> 5j
+vnoremap <S-Up> 5k
 
 " Plugin mappings "
 " nmap <leader>f :NERDTreeFind<CR>
@@ -38,6 +45,10 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = '⎇ ' " 
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = ''
 
 " dbgPamvim "
 let g:dbgPavimPort = 9000

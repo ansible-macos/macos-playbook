@@ -54,6 +54,10 @@
   - name: Install vim-css-color
     git: repo=https://github.com/ap/vim-css-color.git dest=~/.janus/vim-css-color
 
+    # CSV
+  - name: Install csv vim
+    git: repo=https://github.com/chrisbra/csv.vim.git dest=~/.janus/csv-vim
+
     # Settings
   - name: Creates .vim.settings directory
     file: path=~/.vim.settings state=directory

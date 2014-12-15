@@ -10,6 +10,7 @@
     - zsh
     - lua
     - vim # --with-lua
+    - macvim # --with-cscope --with-lua --override-system-vim --HEAD
     - the_silver_searcher
     - ctags
     - mongodb
@@ -23,7 +24,6 @@
     - utorrent
     - mplayerx
     - dropbox
-    - macvim # --with-cscope --with-lua --override-system-vim --HEAD
     - majic
     - vagrant
     - virtualbox
