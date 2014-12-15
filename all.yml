@@ -6,3 +6,4 @@
 - include: git.yml
 - include: vim.yml
 - include: zsh.yml
+- include: osx.yml
