@@ -1,6 +1,13 @@
 ---
 - hosts: all
   tasks:
-    - name: Enables ethernet for AirDrop
+    - name: "Finder: Enables ethernet for AirDrop"
       command: defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
-
+    - name: "Finder: show all filename extensions"
+      command: defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+    - name: "Finder: When performing a search, search the current folder by default"
+      command: defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+    - name: "Finder: Avoid creating .DS_Store files on network volumes"
+      command: defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+    - name: "Show the ~/Library folder"
+      command: chflags nohidden ~/Library
