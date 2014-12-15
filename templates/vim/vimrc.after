@@ -83,6 +83,6 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 let g:extra_whitespace_ignored_filetypes = ['unite']
 
 " phpcomplete-extended "
-" let g:phpcomplete_index_composer_command='/usr/local/bin/composer'
-" autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
+let g:phpcomplete_index_composer_command='composer'
+autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
 
