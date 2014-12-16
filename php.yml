@@ -1,6 +1,6 @@
 - hosts: all
   vars:
-    date_timezone: Europa/Madrid
+    date_timezone: Europe/Madrid
   roles:
   - role: osxc.packages
     brew_taps:
