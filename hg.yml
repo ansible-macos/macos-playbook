@@ -1,0 +1,6 @@
+---
+# Configure your freshly installed software
+- hosts: all
+  tasks:
+    - name: Copy zshrc
+      template: src=templates/hg/hgrc dest=~/.hgrc

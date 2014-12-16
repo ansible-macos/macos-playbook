@@ -8,7 +8,7 @@
 " Link:   https://github.com/ggreer/the_silver_searcher
 " Notes:  To search ignoring VCS ingoring files use --skip-vcs-ignores
 "
-let g:unite_source_rec_async_command='ag --nocolor --nogroup --ignore ".tmp" --ignore ".hg" --ignore ".svn" --ignore ".git" --ignore ".bzr" --hidden -g ""'
+let g:unite_source_rec_async_command='ag --skip-vcs-ignores --nocolor --nogroup --ignore ".tmp" --ignore ".hg" --ignore ".svn" --ignore ".git" --ignore ".bzr" --hidden -g ""'
 
 "
 " Desc: Map command for file search with fuzzyfinder style by default it

@@ -7,8 +7,10 @@
     - caskroom/fonts
     brew_packages:
     - git
+    - mercurial
     - zsh
     - lua
+    - luajit
     - vim # --with-lua
     - macvim # --with-cscope --with-lua --override-system-vim --HEAD
     - the_silver_searcher
