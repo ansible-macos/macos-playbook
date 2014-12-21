@@ -26,6 +26,10 @@ autocmd Filetype php setlocal ts=4 sw=4 sts=0 expandtab
 autocmd Filetype markdown setlocal ts=4 sw=4 sts=0 expandtab
 autocmd Filetype json setlocal conceallevel=0 expandtab
 
+autocmd BufNewFile,BufRead *.html.twig   set syntax=html.twig
+autocmd BufNewFile,BufRead *.html.swig   set syntax=html.twig
+autocmd BufNewFile,BufRead *.swig   set syntax=twig
+
 " Move Mappings "
 nnoremap <S-Down> 5j
 nnoremap <S-Up> 5k
