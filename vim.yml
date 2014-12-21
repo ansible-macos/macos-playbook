@@ -14,15 +14,13 @@
   - name: Install closetag plugin
     git: repo=https://github.com/docunext/closetag.vim.git dest=~/.janus/closetag
 
-  # Syntaxes
+   # Syntaxes
   - name: Install vim-less
     git: repo=https://github.com/groenewege/vim-less.git dest=~/.janus/vim-less
   - name: Install vim-twig
     git: repo=https://github.com/evidens/vim-twig.git dest=~/.janus/vim-twig
 
     # Autocompletion
-  - name: Install supertab plugin
-    git: repo=https://github.com/ervandew/supertab.git dest=~/.janus/supertab
   - name: Install unite plugin
     git: repo=https://github.com/Shougo/unite.vim.git dest=~/.janus/unite
   - name: Install vimproc plugin
@@ -35,12 +33,12 @@
     git: repo=https://github.com/Shougo/neosnippet.vim.git dest=~/.janus/neosnippet
   - name: Install neosnippet-snippets plugin
     git: repo=https://github.com/Shougo/neosnippet-snippets.git dest=~/.janus/neosnippet-snippets
+  - name: Install vim-misc plugin
+    git: repo=https://github.com/xolox/vim-misc.git dest=~/.janus/vim-misc
+  - name: Install vim-easytags plugin
+    git: repo=https://github.com/xolox/vim-easytags.git dest=~/.janus/vim-easytags
 
     # PHP Plugins
-  - name: Install phpcomplete-extended plugin
-    git: repo=https://github.com/m2mdas/phpcomplete-extended.git dest=~/.janus/phpcomplete-extended
-  - name: Install phpcomplete-extended-symfony plugin
-    git: repo=https://github.com/m2mdas/phpcomplete-extended-symfony.git dest=~/.janus/phpcomplete-extended-symfony
   - name: Install PVD
     git: repo=https://github.com/tobyS/pdv.git dest=~/.janus/pvd
   - name: Install DBGPavim plugin

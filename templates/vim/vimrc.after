@@ -12,6 +12,8 @@ set linespace=1
 " Editing
 "
 set timeoutlen=250
+set relativenumber
+hi CursorLineNr   term=bold ctermfg=Yellow guifg=Yellow
 
 " Set ruler mark "
 highlight ColorColumn ctermbg=magenta
@@ -83,7 +85,7 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 " vim-trailing-whitespace "
 let g:extra_whitespace_ignored_filetypes = ['unite']
 
-" phpcomplete-extended "
-let g:phpcomplete_index_composer_command='composer'
-autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
-
+" easytags "
+set tags=./tags;
+set tags=.git/tags,../../.git/tags,.hg/tags,./tags,.tags;
+let g:easytags_dynamic_files = 2
