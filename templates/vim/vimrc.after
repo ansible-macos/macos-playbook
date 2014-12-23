@@ -25,6 +25,7 @@ autocmd Filetype html,ruby,javascript setlocal ts=2 sw=2 expandtab
 autocmd Filetype php setlocal ts=4 sw=4 sts=0 expandtab
 autocmd Filetype markdown setlocal ts=4 sw=4 sts=0 expandtab
 autocmd Filetype json setlocal conceallevel=0 expandtab
+autocmd Filetype snippet setlocal expandtab
 
 autocmd BufNewFile,BufRead *.yml.dist set syntax=yaml
 autocmd BufNewFile,BufRead *.twig set syntax=htmljinja
