@@ -18,7 +18,9 @@
   - name: Install vim-less
     git: repo=https://github.com/groenewege/vim-less.git dest=~/.janus/vim-less
   - name: Install vim-twig
-    git: repo=https://github.com/evidens/vim-twig.git dest=~/.janus/vim-twig
+    git: repo=https://github.com/mitsuhiko/vim-jinja.git dest=~/.janus/vim-jinja
+  - name: install todo
+    git: repo=https://github.com/vitalk/vim-simple-todo.git dest=~/.janus/vim-simple-todo
 
     # Autocompletion
   - name: Install unite plugin
