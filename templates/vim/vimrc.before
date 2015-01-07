@@ -1,3 +1,4 @@
 let mapleader = ","
 
 call janus#disable_plugin('jslint')
+call janus#disable_plugin('snipmate')
