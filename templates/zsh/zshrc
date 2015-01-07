@@ -60,7 +60,8 @@ export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 export PATH="$(brew --prefix php56)/bin:$PATH"
 export PATH="$PATH:/usr/local/share/python"
 
-export EDITOR='mvim'
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 source ~/.zsh_aliases
 

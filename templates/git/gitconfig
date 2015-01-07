@@ -35,6 +35,7 @@
     whitespace = fix
 
 [core]
+    editor = "vim"
     ignorecase = false
     # Use custom `.gitignore` and `.gitattributes`
     excludesfile = /Users/work/.gitignore
