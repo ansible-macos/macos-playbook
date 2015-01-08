@@ -45,7 +45,14 @@ nnoremap <Space> za
 vnoremap <Space> za
 
 " Plugin mappings "
-" nmap <leader>f :NERDTreeFind<CR>
+nmap <leader>f :NERDTreeFind<CR>
+
+if filereadable(".git/config")
+  let g:NERDTreeBookmarksFile = ".git/.NERDTreeBookmarks"
+  call g:NERDTreeBookmark.CacheBookmarks(0)
+endif
+
+" Git "
 nmap <leader>d :!git difftool -y -t Kaleidoscope<CR>
 
 " Include unite settings"

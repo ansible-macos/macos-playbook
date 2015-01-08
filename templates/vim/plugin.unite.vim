@@ -18,4 +18,4 @@ noremap <Leader>0 :Unite -start-insert<CR>
 noremap <Leader>9 :Unite -start-insert file_rec/async:!<CR>
 noremap <Leader>8 :Unite window<CR>
 noremap <Leader>7 :Unite buffer<CR>
-noremap <Leader>6 :Unite command<CR>
+noremap <Leader>6 :Unite -start-insert command<CR>
