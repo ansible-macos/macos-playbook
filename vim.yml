@@ -41,6 +41,8 @@
     # PHP Plugins
   - name: Install PVD
     git: repo=https://github.com/tobyS/pdv.git dest=~/.janus/pvd
+  - name: vmustache
+    git: repo=https://github.com/tobyS/vmustache dest=~/.janus/vmustache
   - name: Install DBGPavim plugin
     git: repo=https://github.com/brookhong/DBGPavim.git dest=~/.janus/DBGPavim
   - name: Install vim-php-cs-fixer plugin
