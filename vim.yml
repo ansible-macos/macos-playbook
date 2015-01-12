@@ -1,69 +1,57 @@
 ---
 - hosts: all
   tasks:
-  - name: Install vim janus
+  - name: "distro vim janus"
     git: repo=https://github.com/carlhuda/janus.git dest=~/.vim/
-
-  # Basics
-  - name: Install vim-airline
+  - name: "editor vim-airline"
     git: repo=https://github.com/bling/vim-airline.git dest=~/.janus/vim-airline
-  - name: Install vim-gitgutter
-    git: repo=https://github.com/airblade/vim-gitgutter.git dest=~/.janus/vim-gitgutter
-  - name: Install delimit Mate
+  - name: "editor delimit Mate"
     git: repo=https://github.com/Raimondi/delimitMate.git dest=~/.janus/delimitMate
-  - name: Install closetag plugin
+  - name: "editor closetag"
     git: repo=https://github.com/docunext/closetag.vim.git dest=~/.janus/closetag
-
-   # Syntaxes
-  - name: Install vim-less
+  - name: "syntax vim-less"
     git: repo=https://github.com/groenewege/vim-less.git dest=~/.janus/vim-less
-  - name: Install vim-twig
+  - name: "syntax vim-twig"
     git: repo=https://github.com/mitsuhiko/vim-jinja.git dest=~/.janus/vim-jinja
-  - name: install todo
-    git: repo=https://github.com/vitalk/vim-simple-todo.git dest=~/.janus/vim-simple-todo
-
-    # Autocompletion
-  - name: Install unite plugin
+  - name: "git vim-gitgutter"
+    git: repo=https://github.com/airblade/vim-gitgutter.git dest=~/.janus/vim-gitgutter
+  - name: "completion emmet"
+    git: repo=https://github.com/mattn/emmet-vim.git dest=~/.janus/emmet-vim
+  - name: "completion Install unite plugin"
     git: repo=https://github.com/Shougo/unite.vim.git dest=~/.janus/unite
-  - name: Install vimproc plugin
+  - name: "completion Install vimproc plugin"
     git: repo=https://github.com/Shougo/vimproc.vim.git dest=~/.janus/vimproc
-  - name: Build vimproc plugin
+  - name: "completion Build vimproc plugin"
     command: "cd ~/.janus/vimproc && make -f make_mac.mak"
-  - name: Install neocomplete plugin
+  - name: "completion Install neocomplete plugin"
     git: repo=https://github.com/Shougo/neocomplete.vim.git dest=~/.janus/neocomplete
-  - name: Install ultisnips plugin
+  - name: "completion Install ultisnips plugin"
     git: repo=https://github.com/SirVer/ultisnips.git dest=~/.janus/ultisnips
-  - name: Install vim-misc plugin
+  - name: "completion Install vim-snippets"
+    git: repo=https://github.com/honza/vim-snippets.git dest~/.vim-snippets
+  - name: "completion Install vim-misc plugin"
     git: repo=https://github.com/xolox/vim-misc.git dest=~/.janus/vim-misc
-  - name: Install vim-easytags plugin
+  - name: "completion Install vim-easytags plugin"
     git: repo=https://github.com/xolox/vim-easytags.git dest=~/.janus/vim-easytags
-
-    # PHP Plugins
-  - name: Install PVD
+  - name: "completion Install PVD"
     git: repo=https://github.com/tobyS/pdv.git dest=~/.janus/pvd
-  - name: vmustache
+  - name: "completion vmustache"
     git: repo=https://github.com/tobyS/vmustache dest=~/.janus/vmustache
-  - name: Install DBGPavim plugin
+  - name: "php Install DBGPavim plugin"
     git: repo=https://github.com/brookhong/DBGPavim.git dest=~/.janus/DBGPavim
-  - name: Install vim-php-cs-fixer plugin
+  - name: "php Install vim-php-cs-fixer plugin"
     git: repo=https://github.com/stephpy/vim-php-cs-fixer dest=~/.janus/vim-php-cs-fixer
-  - name: Install phpmanual plugin
+  - name: "php Install phpmanual plugin"
     git: repo=https://github.com/vim-scripts/phpmanual dest=~/.janus/phpmanual
-
-    # HTML and CSS
-  - name: Install vim-css-color
+  - name: "css vim css color"
     git: repo=https://github.com/ap/vim-css-color.git dest=~/.janus/vim-css-color
-
-    # CSV
-  - name: Install csv vim
+  - name: "install csv vim"
     git: repo=https://github.com/chrisbra/csv.vim.git dest=~/.janus/csv-vim
-
-    # Settings
-  - name: Creates .vim.settings directory
+  - name: "creates .vim.settings directory"
     file: path=~/.vim.settings state=directory
-  - name: Copy vimrc.after
+  - name: "copy vimrc.after"
     template: src=templates/vim/vimrc.after dest=~/.vimrc.after
-  - name: Copy vimrc.before
+  - name: "copy vimrc.before"
     template: src=templates/vim/vimrc.before dest=~/.vimrc.before
-  - name: Copy plugin.unite.vim
+  - name: "copy plugin.unite.vim"
     template: src=templates/vim/plugin.unite.vim dest=~/.vim.settings/plugin.unite.vim
