@@ -15,6 +15,18 @@ set timeoutlen=250
 set relativenumber
 hi CursorLineNr   term=bold ctermfg=Yellow guifg=Yellow
 
+"
+" Copy to clipboar
+"
+vnoremap <leader>1 "*y
+nnoremap <leader>1 "*y
+
+"
+" Paste from clipboar
+"
+vnoremap <leader>2 "*p
+nnoremap <leader>2 "*p
+
 " Set ruler mark "
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%80v', 100)
