@@ -25,8 +25,6 @@
     command: "cd ~/.janus/vimproc && make -f make_mac.mak"
   - name: "completion Install neocomplete plugin"
     git: repo=https://github.com/Shougo/neocomplete.vim.git dest=~/.janus/neocomplete
-  - name: "completion Install ultisnips plugin"
-    git: repo=https://github.com/SirVer/ultisnips.git dest=~/.janus/ultisnips
   - name: "completion Install vim-misc plugin"
     git: repo=https://github.com/xolox/vim-misc.git dest=~/.janus/vim-misc
   - name: "completion Install vim-easytags plugin"
