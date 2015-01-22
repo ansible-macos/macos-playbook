@@ -34,15 +34,18 @@ call matchadd('ColorColumn', '\%80v', 100)
 " FileTypes settings "
 set smartindent
 set ts=2 sw=2 expandtab
+
+autocmd BufNewFile,BufRead *.yml.dist set syntax=yaml ft=yaml
+autocmd BufNewFile,BufRead *.twig set syntax=jinja
+autocmd BufNewFile,BufRead *.swig set syntax=jinja
+autocmd BufNewFile,BufRead *.html.twig set syntax=htmljinja ft=html
+autocmd BufNewFile,BufRead *.html.swig set syntax=htmljinja ft=html
+
 autocmd Filetype html,ruby,javascript setlocal ts=2 sw=2 expandtab
 autocmd Filetype php setlocal ts=4 sw=4 sts=0 expandtab
 autocmd Filetype markdown setlocal ts=4 sw=4 sts=0 expandtab
 autocmd Filetype json setlocal conceallevel=0 expandtab
 autocmd Filetype snippets setlocal expandtab
-
-autocmd BufNewFile,BufRead *.yml.dist set syntax=yaml
-autocmd BufNewFile,BufRead *.twig set syntax=htmljinja
-autocmd BufNewFile,BufRead *.swig set syntax=htmljinja
 
 " Move Mappings "
 nnoremap <S-Down> 5j
