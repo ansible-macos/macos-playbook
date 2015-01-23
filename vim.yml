@@ -13,6 +13,8 @@
     git: repo=https://github.com/groenewege/vim-less.git dest=~/.janus/vim-less
   - name: "syntax vim-twig"
     git: repo=https://github.com/mitsuhiko/vim-jinja.git dest=~/.janus/vim-jinja
+  - name: "syntax html5"
+    git: repo=https://github.com/othree/html5.vim.git dest=~/.janus/html5.vim
   - name: "git vim-gitgutter"
     git: repo=https://github.com/airblade/vim-gitgutter.git dest=~/.janus/vim-gitgutter
   - name: "completion emmet"
