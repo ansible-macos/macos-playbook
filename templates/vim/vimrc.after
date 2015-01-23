@@ -73,12 +73,6 @@ nmap <leader>d :!git difftool -y -t Kaleidoscope<CR>
 " Include unite settings"
 source ~/.vim.settings/plugin.unite.vim
 
-" Snippets "
-" let g:snipMate.scope_aliases['htmljinja'] = 'html,twig,jinja'
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
 " Airline "
 let g:airline_powerline_fonts = 1
 let g:airline_left_sep = ''
@@ -110,17 +104,25 @@ set wildignore+=
 
 " neocomplete "
 " https://github.com/Shougo/neocomplete.vim/blob/master/README.md "
-let g:acp_enableAtStartup = 0
+let g:acp_enableAtStartup = 1
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 2
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+
+NeoCompleteEnable
 
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+" Snippets "
+let g:UltiSnipsExpandTrigger="<s-tab>"
+
+" Emmet "
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 " vim-trailing-whitespace "
 let g:extra_whitespace_ignored_filetypes = ['unite']
