@@ -5,6 +5,8 @@
     brew_packages:
     - ruby
   tasks:
+    - name: ensure lunchy is installed
+      gem: lunchy
     - name: ensure librarian-chef is installed
       gem: name=librarian-chef
     - name: ensure chef is installed
