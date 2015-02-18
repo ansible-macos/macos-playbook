@@ -17,6 +17,7 @@
     - ctags
     - mongodb
     - mysql
+    - jenv
     cask_packages:
     - google-chrome
     - firefox
