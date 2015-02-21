@@ -27,6 +27,6 @@ Thumbs.db
 # Ideas
 .idea
 
-# Vim
+# Tools
 .phpcomplete_extended
-
+.capistrano/metrics
