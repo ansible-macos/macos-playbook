@@ -17,7 +17,8 @@
     - ctags
     - mongodb
     - mysql
-    - jenv
+    - jenv # Multiple java versions manager
+    - cloc # Count lines of code utility
     cask_packages:
     - google-chrome
     - firefox
