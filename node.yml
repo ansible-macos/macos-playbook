@@ -24,5 +24,7 @@
     npm: name=bower global=yes
   - name: ensure yo is installed
     npm: name=yo global=yes
+  - name: ensure npm-check-updates is installed
+    npm: name=npm-check-updates global=yes
   - name: ensure sails is installed
     npm: name=sails global=yes
