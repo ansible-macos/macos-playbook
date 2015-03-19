@@ -5,6 +5,7 @@
   - role: osxc.packages
     brew_taps:
     - caskroom/fonts
+    - thoughtbot/formulae
     brew_packages:
     - git
     - mercurial
@@ -19,6 +20,10 @@
     - mysql
     - jenv # Multiple java versions manager
     - cloc # Count lines of code utility
+    - pick # Fuzzy finder command line tool to select options
+    - wget
+    - lame # Audio codec tool
+    - flac # Audio codec tool
     cask_packages:
     - google-chrome
     - firefox
@@ -28,7 +33,7 @@
     - sourcetree
     - utorrent
     - mplayerx
-    - dropbox
+    - odrive
     - majic
     - vagrant
     - virtualbox

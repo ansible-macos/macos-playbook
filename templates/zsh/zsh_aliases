@@ -50,3 +50,8 @@ alias gl='git log --graph --pretty=format:"%C(bold blue)%h%C(reset) - %C(bold gr
 alias gls='git log --pretty=format:"%h - %an, %ar : %s" -n 20'
 alias gsubpull='git pull && git submodule init && git submodule update && git submodule status'
 alias giff='git difftool'
+
+# Pick alias
+alias cdp='cd $(find . -type d | pick)'
+alias gbp='git checkout $(git branch | cut -c 3- | pick)='
+alias hp='$(history | cut -c8- | sort -u | pick)'
