@@ -55,3 +55,6 @@ alias giff='git difftool'
 alias cdp='cd $(find . -type d | pick)'
 alias gbp='git checkout $(git branch | cut -c 3- | pick)='
 alias hp='$(history | cut -c8- | sort -u | pick)'
+
+# Audio alias
+alias flac2mp3="for f in *.flac; do flac -cd "$f" | lame -b 320 - "${f%.*}".mp3; done"
