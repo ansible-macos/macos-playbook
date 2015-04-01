@@ -1,9 +1,10 @@
-
 # Paths
 alias dt="cd ~/Desktop"
 alias dl="cd ~/Downloads"
-alias dl="cd ~/Documents"
+alias do="cd ~/Documents"
 alias db="cd ~/Dropbox"
+alias lb="cd ~/Library"
+alias so='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && clear'
 
 # Services
 alias h="history"
@@ -51,10 +52,10 @@ alias gls='git log --pretty=format:"%h - %an, %ar : %s" -n 20'
 alias gsubpull='git pull && git submodule init && git submodule update && git submodule status'
 alias giff='git difftool'
 
+# Audio alias
+alias flac2mp3="for f in *.flac; do flac -cd "$f" | lame -b 320 - "${f%.*}".mp3; done"
+
 # Pick alias
 alias cdp='cd $(find . -type d | pick)'
 alias gbp='git checkout $(git branch | cut -c 3- | pick)='
 alias hp='$(history | cut -c8- | sort -u | pick)'
-
-# Audio alias
-alias flac2mp3="for f in *.flac; do flac -cd "$f" | lame -b 320 - "${f%.*}".mp3; done"
