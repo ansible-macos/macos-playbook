@@ -5,7 +5,7 @@ alias do="cd ~/Documents"
 alias db="cd ~/Dropbox"
 alias lb="cd ~/Library"
 alias so='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && clear'
-alias sv='mvim /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && clear'
+alias sv='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && mvim .'
 
 # Services
 alias h="history"
