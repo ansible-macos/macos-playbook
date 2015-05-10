@@ -24,8 +24,9 @@ Thumbs.db
 *~
 .*.swp
 
-# Ideas
+# Ides
 .idea
+*.xcuserstate
 
 # Tools
 .phpcomplete_extended
