@@ -60,6 +60,7 @@ alias gl='git log --graph --pretty=format:"%C(bold blue)%h%C(reset) - %C(bold gr
 alias gls='git log --pretty=format:"%h - %an, %ar : %s" -n 20'
 alias gsubpull='git pull && git submodule init && git submodule update && git submodule status'
 alias giff='git difftool'
+alias bump="mversion"
 
 # Audio alias
 alias flac2mp3="for f in *.flac; do flac -cd "$f" | lame -b 320 - "${f%.*}".mp3; done"
