@@ -21,6 +21,7 @@
     - php56-memcache
     - php56-memcached
     - php-code-sniffer
+    - php-cs-fixer
     - phploc
     - phpmd
     - phpcpd
