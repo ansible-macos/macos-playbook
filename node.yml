@@ -28,3 +28,5 @@
     npm: name=npm-check-updates global=yes
   - name: ensure sails is installed
     npm: name=sails global=yes
+  - name: ensure mversion is installed
+    npm: name=mversion global=yes
