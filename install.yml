@@ -6,6 +6,7 @@
     brew_taps:
     - caskroom/fonts
     - thoughtbot/formulae
+    - gapple/services
     brew_packages:
     - git
     - mercurial
