@@ -25,6 +25,7 @@
     - wget
     - lame # Audio codec tool
     - flac # Audio codec tool
+    - httpie
     cask_packages:
     - google-chrome
     - firefox
