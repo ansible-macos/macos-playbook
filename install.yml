@@ -23,8 +23,6 @@
     - cloc # Count lines of code utility
     - pick # Fuzzy finder command line tool to select options
     - wget
-    - lame # Audio codec tool
-    - flac # Audio codec tool
     - httpie
     cask_packages:
     - google-chrome
