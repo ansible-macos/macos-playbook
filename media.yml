@@ -1,0 +1,12 @@
+- hosts: all
+  vars:
+    date_timezone: Europe/Madrid
+  roles:
+  - role: osxc.packages
+    brew_taps: []
+    brew_packages:
+    - youtube-dl
+    - ffmpeg
+    - libav
+    - lame
+    - flac
