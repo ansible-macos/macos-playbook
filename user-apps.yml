@@ -1,0 +1,30 @@
+---
+# Here we describe every software we may want to install
+- hosts: all
+  roles:
+  - role: osxc.packages
+    brew_taps:
+      - caskroom/fonts
+      - thoughtbot/formulae
+      - gapple/services
+    cask_packages:
+      - google-chrome
+      - firefox
+      - flash-player
+      - sourcetree
+      - utorrent
+      - mplayerx
+      - odrive
+      - majic
+      - vagrant
+      - virtualbox
+      - kitematic
+      - sequel-pro
+      - robomongo
+      - cyberduck
+      - rdm
+      - mongodbpreferencepane
+      - colorpicker-skalacolor
+      - font-inconsolata
+      - font-source-code-pro
+      - font-sauce-code-powerline

@@ -1,0 +1,41 @@
+#
+# Install tools for web developers
+#
+---
+- hosts: all
+  vars:
+    node_version: stable
+    n_repo: https://github.com/visionmedia/n
+  tasks:
+  - name: download n
+    git: repo={{ n_repo }} dest=/tmp/n
+  - name: install n
+    command: make -C /tmp/n
+  - name: install node stable
+    command: n {{ node_version }}
+  - name: ensure less is installed
+    npm: name=less version=1.7.5 global=yes
+  - name: ensure less is installed
+    npm: name=less global=yes
+  - name: ensure grunt is installed
+    npm: name=grunt global=yes
+  - name: ensure grunt-cli is installed
+    npm: name=grunt-cli global=yes
+  - name: ensure uglify-js is installed
+    npm: name=uglify-js global=yes
+  - name: ensure bower is installed
+    npm: name=bower global=yes
+  - name: ensure yo is installed
+    npm: name=yo global=yes
+  - name: ensure npm-check-updates is installed
+    npm: name=npm-check-updates global=yes
+  - name: ensure sails is installed
+    npm: name=sails global=yes
+  - name: ensure mversion is installed
+    npm: name=mversion global=yes
+  - name: ensure jscs is installed
+    npm: name=jscs global=yes
+  - name: ensure psi is installed
+    npm: name=psi global=yes
+  - name: ensure webpack is installed
+    npm: name=webpack global=yes

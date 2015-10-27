@@ -1,0 +1,9 @@
+- hosts: all
+  roles:
+  - role: osxc.packages
+    brew_taps: []
+    brew_packages: []
+    cask_packages:
+    - skype
+    - slack
+    - discord

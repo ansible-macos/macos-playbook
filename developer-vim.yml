@@ -1,5 +1,17 @@
+## Update to https://github.com/luishdez/vim-dotfiles
 ---
 - hosts: all
+  roles:
+  - role: osxc.packages
+    brew_taps:
+    - caskroom/fonts
+    - thoughtbot/formulae
+    - gapple/services
+    brew_packages:
+    - lua
+    - luajit
+    - vim # --with-lua
+    - macvim # --with-cscope --with-lua --override-system-vim --HEAD
   tasks:
   - name: "distro vim janus"
     git: repo=https://github.com/carlhuda/janus.git dest=~/.vim/

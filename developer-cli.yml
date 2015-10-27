@@ -1,6 +1,7 @@
 ---
-# Configure your freshly installed software
 - hosts: all
+  brew_packages:
+    - zsh
   tasks:
     - name: Install zsh from repository
       git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh/
@@ -10,3 +11,13 @@
       template: src=templates/zsh/zsh_aliases dest=~/.zsh_aliases
     - name: Make zsh as default terminal
       command: chsh -s /bin/zsh
+
+    ## Todo symlink keys from dropbox
+    - name: Ensure 600 for ~/.ssh/id_rsa
+      command: chmod 600 ~/.ssh/id_rsa
+    - name: Ensure 600 for ~/.ssh/id_rsa.pub
+      command: chmod 600 ~/.ssh/id_rsa.pub
+    - name: Ensure 600 for ~/.ssh/known_hosts
+      command: chmod 600 ~/.ssh/known_hosts
+    - name: Ensure 755 for ~/.ssh
+      command: chmod 755 ~/.ssh

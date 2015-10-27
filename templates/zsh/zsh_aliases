@@ -63,4 +63,5 @@ alias giff='git difftool'
 alias bump="mversion"
 
 # Audio alias
-alias flac2mp3="for f in *.flac; do flac -cd "$f" | lame -b 320 - "${f%.*}".mp3; done"
+alias flac2mp3="for f in *.flac; do flac -cd "$f" | lame -b 320 - "${f%.*}.mp3"; done"
+alias flac2alac="for f in *.flac; do avconv -i "$f" -c:a alac "${f%.flac}.m4a"; done"
