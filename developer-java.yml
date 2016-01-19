@@ -1,11 +1,7 @@
 ---
-# Here we describe every software we may want to install
 - hosts: all
   roles:
   - role: osxc.packages
-    brew_taps:
-    - caskroom/fonts
-    - thoughtbot/formulae
-    - gapple/services
+    brew_taps: []
     brew_packages:
-    - jenv # Multiple java versions manager
+      - jenv # Multiple java versions manager

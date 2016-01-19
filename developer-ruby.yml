@@ -3,10 +3,8 @@
   roles:
   - role: osxc.packages
     brew_packages:
-    - ruby
+      - ruby
   tasks:
-    - name: ensure lunchy is installed
-      gem: name=lunchy
     - name: ensure librarian-chef is installed
       gem: name=librarian-chef
     - name: ensure chef is installed

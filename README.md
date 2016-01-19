@@ -36,4 +36,3 @@ If you want to run only the specific playbooks, you can use
 If while running the install.yml playbook some of the casks are missing try to run:
 
     brew update && brew upgrade brew-cask
-

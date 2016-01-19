@@ -1,0 +1,16 @@
+---
+- hosts: all
+  vars:
+      user_email: luis.munoz.hdez@gmail.com
+      user_name: Luis Hdez
+  roles:
+  - role: osxc.packages
+    brew_packages:
+      - docker
+      - docker-toolbox
+    cask_packages:
+      - virtualbox
+      - vagrant
+  tasks:
+    - pip: name=docker-compose
+    - npm: name=dockerlint global=yes

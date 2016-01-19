@@ -1,25 +1,21 @@
-## Setup common tools for all developers
 ---
 - hosts: all
   vars:
     user_email: luis.munoz.hdez@gmail.com
     user_name: Luis Hdez
-  brew_taps:
-    - caskroom/fonts
-    - thoughtbot/formulae
-    - gapple/services
-  brew_packages:
-    - git
-    - mercurial
-    - the_silver_searcher
-    - ctags
-    - cloc # Count lines of code utility
-    - pick # Fuzzy finder command line tool to select options
-    - wget
-    - httpie
-    - mongodb
-    - mysql
-    - redis
+  roles:
+  - role: osxc.packages
+    brew_taps:
+      - gapple/services
+    brew_packages:
+      - git
+      - mercurial
+      - ctags
+      - wget
+      - httpie
+      - mongodb
+      - mysql
+      - redis
   tasks:
     - name: Setup hg VCS
       template: src=templates/hg/hgrc dest=~/.hgrc

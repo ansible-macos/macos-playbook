@@ -1,0 +1,12 @@
+- hosts: all
+  roles:
+  - role: osxc.packages
+    brew_taps: []
+    brew_packages: []
+    cask_packages:
+    - sketch
+    - sketch-toolbox
+    - sketch-tool
+    - principle
+    - adobe-photoshop-cc
+    - adobe-illustrator-cc

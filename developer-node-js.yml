@@ -32,5 +32,7 @@
     npm: name=mversion global=yes
   - name: ensure jscs is installed
     npm: name=jscs global=yes
+  - name: ensure eslint is installed
+    npm: name=eslint global=yes
   - name: ensure psi is installed
     npm: name=psi global=yes

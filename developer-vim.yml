@@ -1,67 +1,15 @@
-## Update to https://github.com/luishdez/vim-dotfiles
 ---
 - hosts: all
   roles:
   - role: osxc.packages
     brew_taps:
-    - caskroom/fonts
-    - thoughtbot/formulae
-    - gapple/services
+    - neovim/neovim
     brew_packages:
     - lua
     - luajit
-    - vim # --with-lua
-    - macvim # --with-cscope --with-lua --override-system-vim --HEAD
+    - neovim
   tasks:
-  - name: "distro vim janus"
-    git: repo=https://github.com/carlhuda/janus.git dest=~/.vim/
-  - name: "editor vim-airline"
-    git: repo=https://github.com/bling/vim-airline.git dest=~/.janus/vim-airline
-  - name: "editor delimit Mate"
-    git: repo=https://github.com/Raimondi/delimitMate.git dest=~/.janus/delimitMate
-  - name: "editor closetag"
-    git: repo=https://github.com/docunext/closetag.vim.git dest=~/.janus/closetag
-  - name: "syntax vim-less"
-    git: repo=https://github.com/groenewege/vim-less.git dest=~/.janus/vim-less
-  - name: "syntax vim-twig"
-    git: repo=https://github.com/mitsuhiko/vim-jinja.git dest=~/.janus/vim-jinja
-  - name: "syntax html5"
-    git: repo=https://github.com/othree/html5.vim.git dest=~/.janus/html5.vim
-  - name: "git vim-gitgutter"
-    git: repo=https://github.com/airblade/vim-gitgutter.git dest=~/.janus/vim-gitgutter
-  - name: "completion emmet"
-    git: repo=https://github.com/mattn/emmet-vim.git dest=~/.janus/emmet-vim
-  - name: "completion Install unite plugin"
-    git: repo=https://github.com/Shougo/unite.vim.git dest=~/.janus/unite
-  - name: "completion Install vimproc plugin"
-    git: repo=https://github.com/Shougo/vimproc.vim.git dest=~/.janus/vimproc
-  - name: "completion Build vimproc plugin"
-    command: "cd ~/.janus/vimproc && make -f make_mac.mak"
-  - name: "completion Install neocomplete plugin"
-    git: repo=https://github.com/Shougo/neocomplete.vim.git dest=~/.janus/neocomplete
-  - name: "completion Install vim-misc plugin"
-    git: repo=https://github.com/xolox/vim-misc.git dest=~/.janus/vim-misc
-  - name: "completion Install vim-easytags plugin"
-    git: repo=https://github.com/xolox/vim-easytags.git dest=~/.janus/vim-easytags
-  - name: "completion Install PVD"
-    git: repo=https://github.com/tobyS/pdv.git dest=~/.janus/pvd
-  - name: "completion vmustache"
-    git: repo=https://github.com/tobyS/vmustache dest=~/.janus/vmustache
-  - name: "php Install DBGPavim plugin"
-    git: repo=https://github.com/brookhong/DBGPavim.git dest=~/.janus/DBGPavim
-  - name: "php Install vim-php-cs-fixer plugin"
-    git: repo=https://github.com/stephpy/vim-php-cs-fixer dest=~/.janus/vim-php-cs-fixer
-  - name: "php Install phpmanual plugin"
-    git: repo=https://github.com/vim-scripts/phpmanual dest=~/.janus/phpmanual
-  - name: "css vim css color"
-    git: repo=https://github.com/ap/vim-css-color.git dest=~/.janus/vim-css-color
-  - name: "install csv vim"
-    git: repo=https://github.com/chrisbra/csv.vim.git dest=~/.janus/csv-vim
-  - name: "creates .vim.settings directory"
-    file: path=~/.vim.settings state=directory
-  - name: "copy vimrc.after"
-    template: src=templates/vim/vimrc.after dest=~/.vimrc.after
-  - name: "copy vimrc.before"
-    template: src=templates/vim/vimrc.before dest=~/.vimrc.before
-  - name: "copy plugin.unite.vim"
-    template: src=templates/vim/plugin.unite.vim dest=~/.vim.settings/plugin.unite.vim
+    - git: repo=ssh://git@github.com:luishdez/vim-dotfiles.git dest=~/.nvim
+    - command: ln -s .nvim/vimrc.base .nvimrc
+    - command: ln -s .nvim/vimrc.minimal .mvimrc.minimal
+    - command: ln -s .nvim/gvimrc.base .gnvimrc

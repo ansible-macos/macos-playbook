@@ -65,4 +65,4 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 source ~/.zsh_aliases
-
+source ~/.env_secret

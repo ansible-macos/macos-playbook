@@ -1,0 +1,118 @@
+"*":
+  "PHP-Debug": {}
+  "atom-autocomplete-php":
+    autoloadPaths: [
+      "vendor/autoload.php"
+      "app/Symfony/vendor/autoload.php"
+    ]
+    binPhp: "/usr/local/opt/php56/bin/php"
+    classMapFiles: [
+      "app/Symfony/vendor/composer/autoload_classmap.php"
+      "vendor/composer/autoload_classmap.php"
+    ]
+  "atom-beautify":
+    _analyticsUserId: "db83172e-7699-4357-879b-1812302b5f6e"
+  "atom-symfony2":
+    console: [
+      "app/Symfony/app/console"
+    ]
+  "atom-ternjs": {}
+  atomatigit: {}
+  "autocomplete-plus": {}
+  core:
+    audioBeep: false
+    disabledPackages: [
+      "language-swig"
+      "file-type-icons"
+      "file-types"
+      "atom-color-highlight"
+      "api-blueprint-preview"
+      "atom-terminal"
+      "javascript-snippets"
+      "git-control"
+      "language-api-blueprint"
+      "linter-tidy"
+      "php-introspector"
+      "terminal-panel"
+      "language-todo"
+      "linter-htmlhint"
+      "markdown-themeable-pdf"
+      "linter-jshint"
+      "atom-autocomplete-php"
+      "atom-beautify"
+      "atom-html-preview"
+      "php-debug"
+    ]
+    excludeVcsIgnoredPaths: false
+    followSymlinks: false
+    ignoredNames: [
+      ".DS_Store"
+      ".vagrant"
+      "._*"
+      "Thumbs.db"
+    ]
+    projectHome: "/Volumes/work-data/sources"
+    themes: [
+      "one-dark-ui"
+      "atom-base16-wobble-dark-syntax"
+    ]
+  editor:
+    fontFamily: "Source Code Pro"
+    invisibles: {}
+  emmet: {}
+  "exception-reporting":
+    userId: "3ce78e03-e80b-ddcb-0f10-15e50a8b8fc0"
+  "file-icons":
+    onChanges: true
+  "file-types":
+    ".swig$": "text.html.twig"
+  "fuzzy-finder": {}
+  "imdone-atom": {}
+  linter:
+    errorPanelHeight: 22
+    ignoredLinterErrors: [
+      "phpcs"
+      "phpmd"
+    ]
+    showErrorTabLine: true
+    subtleLinterErrors: [
+      "php"
+    ]
+  "linter-docker": {}
+  "linter-js-yaml":
+    jsYamlExecutablePath: "/usr/local/bin/js-yaml"
+  "linter-jshint": {}
+  "linter-php":
+    phpExecutablePath: "/usr/local/opt/php56/bin/php"
+  "linter-phpcs":
+    executablePath: "/usr/local/bin/phpcs"
+    phpcsExecutablePath: "/usr/local/bin/phpcs"
+    standard: "PSR2"
+  "linter-phpmd":
+    phpmdExecutablePath: "/usr/local/bin/phpmd"
+    rulesets: "cleancode,controversial,design,unusedcode"
+  "markdown-themeable-pdf": {}
+  "one-dark-ui": {}
+  "php-cs-fixer":
+    executablePath: "/usr/local/bin/php-cs-fixer"
+    level: "symfony"
+  "php-debug": {}
+  pigments:
+    groupPaletteColors: "by file"
+    sortPaletteColors: "by name"
+  react: {}
+  "todo-show":
+    findTheseRegexes: [
+      "@todos"
+      "/ @TODO:?(.+$)/gi"
+      "TODOS"
+      "/ TODO:?(.+$)/gi"
+    ]
+  "tree-view":
+    hideIgnoredNames: true
+  "vim-mode": {}
+  welcome:
+    showOnStartup: false
+".js.source.twig":
+  editor:
+    scrollPastEnd: false
