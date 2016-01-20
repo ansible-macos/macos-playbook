@@ -1,6 +1,0 @@
----
-- hosts: all
-  brew_packages:
-    - s3cmd
-  tasks:
-    - pip: name=awscli

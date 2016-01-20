@@ -8,63 +8,33 @@
       - font-source-code-pro
       - font-sauce-code-powerline
   tasks:
-    # Basics
-    - name: apm install atomatigit
-      command: apm install atomatigit
-    - name: apm install trailing-spaces
-      command: apm install trailing-spaces
-    - name: apm install editorconfig
-      command: apm install editorconfig
-    - name: apm install emmet
-      command: apm install emmet
-    - name: apm install file-icons
-      command: apm install file-icons
-    - name: apm install file-icons
-      command: apm install file-icons
-    - name: apm install tabularize
-      command: apm install tabularize
-
-    # Languages
-    - name: apm install language-docker
-      command: apm install language-docker
-    - name: apm install language-docker
-      command: apm install language-twig
-    - name: apm install language-diff
-      command: apm install language-diff
-    - name: apm install react
-      command: apm install react
-
-    # Autocompletion
-    - name: apm install docblockr
-      command: apm install docblockr
-    - name: apm install autocomplete-php
-      command: apm install autocomplete-php
-    - name: apm install autocomplete-php
-      command: apm install autocomplete-php
-    - name: apm install atom-symfony2
-      command: apm install atom-symfony2
-
-    # Linters and Beautifers
-    - name: apm install atom-symfony2
-      command: apm install atom-symfony2
-    - name: apm install linter
-      command: apm install linter
-    - name: apm install linter-php
-      command: apm install linter-php
-    - name: apm install linter-php
-      command: apm install linter-phpcs
-    - name: apm install linter-phpmd
-      command: apm install linter-phpmd
-    - name: apm install linter-js-yaml
-      command: apm install linter-js-yaml
-    - name: apm install linter-htmlhint
-      command: apm install linter-htmlhint
-    - name: apm install linter-csslint
-      command: apm install linter-csslint
-    - name: apm install linter-eslint
-      command: apm install linter-eslint
-    - name: apm install linter-docker
-      command: apm install linter-docker
+    - name: Setup plugin for atom
+      command: apm install {{ item }}
+      with_items:
+         - atomatigit
+         - trailing-spaces
+         - editorconfig
+         - emmet
+         - pigments
+         - file-icons
+         - tabularize
+         - language-docker
+         - language-twig
+         - language-diff
+         - react
+         - docblockr
+         - autocomplete-php
+         - atom-autocomplete-php
+         - atom-symfony2
+         - linter
+         - linter-php
+         - linter-phpcs
+         - linter-phpmd
+         - linter-js-yaml
+         - linter-htmlhint
+         - linter-csslint
+         - linter-eslint
+         - linter-docker
 
     - name: Setup atom config
       template: src=templates/atom/config.cson dest=~/.atom/config.cson
@@ -74,3 +44,5 @@
       template: src=templates/atom/keymap.cson dest=~/.atom/keymap.cson
     - name: Setup atom styles
       template: src=templates/atom/styles.less dest=~/.atom/styles.less
+
+    - npm: name=dockerlint global=yes

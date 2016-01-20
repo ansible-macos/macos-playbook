@@ -8,9 +8,11 @@
     brew_packages:
       - docker
       - docker-toolbox
+      - s3cmd
     cask_packages:
       - virtualbox
       - vagrant
   tasks:
+    - pip: name=awscli
     - pip: name=docker-compose
     - npm: name=dockerlint global=yes

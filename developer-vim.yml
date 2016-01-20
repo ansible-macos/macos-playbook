@@ -3,13 +3,28 @@
   roles:
   - role: osxc.packages
     brew_taps:
-    - neovim/neovim
+      - neovim/neovim
     brew_packages:
-    - lua
-    - luajit
-    - neovim
+      - lua
+      - luajit
+      - vim --with-lua
+      - neovim
   tasks:
-    - git: repo=ssh://git@github.com:luishdez/vim-dotfiles.git dest=~/.nvim
-    - command: ln -s .nvim/vimrc.base .nvimrc
-    - command: ln -s .nvim/vimrc.minimal .mvimrc.minimal
-    - command: ln -s .nvim/gvimrc.base .gnvimrc
+    - name: Get repo
+      git: repo=git@github.com:luishdez/vim-dotfiles.git dest=~/.vim accept_hostkey=true
+    - name: Link .vimrc
+      file: src=~/.vim/vimrc.base dest=~/.vimrc state=link
+    - name: Link .vimrc.minimal
+      file: src=~/.vim/vimrc.minimal dest=~/.vimrc.minimal state=link
+    - name: Link .gvimrc.base
+      file: src=~/.vim/gvimrc.base dest=~/.gvimrc state=link
+    - name: Ensure ~/.config
+      file: path=~/.config state=directory
+    - name: Link ~/.config/nvim
+      file: src=~/.vim  dest=~/.config/nvim state=link
+    - name: Link ~/.config/nvim/init.vim
+      file: src=~/.vim/vimrc.base  dest=~/.config/nvim/init.vim state=link
+    - name: Setup neobundle
+      command: curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
+    - name: Compile bundles.yml
+      command: ruby compile-vimrc chdir=~/.vim
