@@ -1,4 +1,4 @@
-# OSX Playbook
+# OSX Playbook [WIP]
 
 An Ansible Playbook for web developers using OS X
 

@@ -1,0 +1,39 @@
+---
+brew_taps: []
+npm_packages:
+  - dockerlint
+  - eslint
+  - yaml-js
+  - csslint
+brew_packages:
+  - n
+cask_packages:
+  - atom
+  - font-inconsolata
+  - font-source-code-pro
+  - font-sauce-code-powerline
+atom_packages:
+  - atomatigit
+  - trailing-spaces
+  - editorconfig
+  - emmet
+  - pigments
+  - file-icons
+  - tabularize
+  - language-docker
+  - language-twig
+  - language-diff
+  - react
+  - docblockr
+  - autocomplete-php
+  - atom-autocomplete-php
+  - atom-symfony2
+  - linter
+  - linter-php
+  - linter-phpcs
+  - linter-phpmd
+  - linter-js-yaml
+  - linter-htmlhint
+  - linter-csslint
+  - linter-eslint
+  - linter-docker

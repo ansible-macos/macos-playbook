@@ -1,0 +1,24 @@
+---
+- name: Install homebrew package(s) with brew options
+  homebrew: name={{ item.pkg }} install_options={{ item.opts }} state={{ item.state|default("latest") }}
+  with_items: brew_pkg_with_opts
+  when: brew_pkg_with_opts is defined
+
+- name: Install the homebrew packages
+  homebrew: name={{ item }} state=latest
+  with_items: brew_packages
+  when: brew_packages is defined
+
+- name: Install the cask packages
+  homebrew_cask: name={{ item }}
+  with_items: cask_packages
+  when: cask_packages is defined
+
+- name: Setup hg VCS
+  template: src=templates/hg/hgrc dest=~/.hgrc
+
+- name: Copy global gitconfig
+  template: src=templates/git/gitconfig dest=~/.gitconfig
+
+- name: Copy global gitignore
+  template: src=templates/git/gitignore dest=~/.gitignore

@@ -2,4 +2,5 @@
 - src: osxc.common-env
 - src: osxc.homebrew
 - src: osxc.packages
+  version: master
 - src: osxc.repository

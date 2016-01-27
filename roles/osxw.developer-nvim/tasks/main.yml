@@ -1,0 +1,17 @@
+---
+# environment:
+#   OPENSSL_INCLUDE_DIR: /usr/local/Cellar/openssl/1.0.2e_1/include
+#   OPENSSL_ROOT_DIR: /usr/local/Cellar/openssl/1.0.2e_1/
+- name: Install the homebrew packages
+  homebrew: name={{ item }} state=latest
+  with_items: brew_packages
+
+- name: Install pip3 packages
+  pip: name={{ item }}
+  with_items: pip3_packages
+
+- name: Get repo nvim-gecko
+  git: repo=ttps://github.com/luishdez/neovim-gecko.git dest=~/.config/nvim accept_hostkey=true
+
+- name: Setup vim-plug
+  command: curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

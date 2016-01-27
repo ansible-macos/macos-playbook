@@ -1,19 +1,18 @@
 ---
 - hosts: all
-  vars:
-    node_version: stable
-    n_repo: https://github.com/visionmedia/n
+  roles:
+  - role: osxc.packages
+    brew_packages:
+      - n
   tasks:
-  - name: download n
-    git: repo={{ n_repo }} dest=/tmp/n
-  - name: install n
-    command: make -C /tmp/n
   - name: install node stable
-    command: n {{ node_version }}
+    command: n stable
   - name: ensure less is installed
     npm: name=less version=1.7.5 global=yes
   - name: ensure less is installed
     npm: name=less global=yes
+  - name: ensure gulp is installed
+    npm: name=gulp global=yes
   - name: ensure grunt is installed
     npm: name=grunt global=yes
   - name: ensure grunt-cli is installed

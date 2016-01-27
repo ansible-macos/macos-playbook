@@ -1,0 +1,10 @@
+---
+brew_taps: []
+brew_packages:
+  - neovim
+  - python3
+  - rust
+  - cargo
+  - homebrew/completions/cargo-completion
+pip3_packages:
+  - neovim

@@ -1,0 +1,34 @@
+---
+brew_taps:
+  - homebrew/php
+  - homebrew/dupes
+  - homebrew/versions
+brew_packages_with_opt:
+  - pkg: php56
+    opts: "enable-maintainer-zts,build-from-source"
+  - pkg: php56-igbinary
+    opts: "build-from-source"
+  - pkg: php56-redis
+    opts: "build-from-source"
+brew_packages:
+  - phpbrew
+  - php56-oauth
+  - php56-amqp
+  - php56-mongodb
+  - php56-solr
+  - php56-ssh2
+  - php56-http
+  - php56-uuid
+  - php56-xdebug
+  - php56-memcache
+  - php56-memcached
+  - php-code-sniffer
+  - php-cs-fixer
+  - phploc
+  - phpmd
+  - phpcpd
+  - behat
+  - phpunit
+  - codeception
+  - icu4c
+  - composer

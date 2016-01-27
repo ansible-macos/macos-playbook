@@ -1,0 +1,18 @@
+---
+brew_taps:
+  - gapple/services
+cask_packages:
+  - sourcetree
+  - sequel-pro
+  - robomongo
+  - cyberduck
+  - rdm
+brew_packages:
+  - git
+  - mercurial
+  - ctags
+  - wget
+  - httpie
+  - mongodb
+  - mysql
+  - redis

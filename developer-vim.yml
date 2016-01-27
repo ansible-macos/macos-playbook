@@ -6,8 +6,8 @@
       - neovim/neovim
     brew_packages:
       - lua
+      - vim
       - luajit
-      - vim --with-lua
       - neovim
   tasks:
     - name: Get repo
@@ -25,6 +25,6 @@
     - name: Link ~/.config/nvim/init.vim
       file: src=~/.vim/vimrc.base  dest=~/.config/nvim/init.vim state=link
     - name: Setup neobundle
-      command: curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
+      command: curl -s https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | bash
     - name: Compile bundles.yml
       command: ruby compile-vimrc chdir=~/.vim

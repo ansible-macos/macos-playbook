@@ -9,14 +9,9 @@
     cask_packages:
       - google-chrome
       - firefox
-      - flash-player
-      - sourcetree
+      - flash
       - utorrent
       - mplayerx
-      - sequel-pro
-      - robomongo
-      - cyberduck
-      - rdm
       - skype
       - slack
       - discord

@@ -1,0 +1,20 @@
+---
+brew_taps: []
+npm_packages:
+  - dockerlint
+brew_packages:
+  - n
+  - python
+  - ruby
+  - docker
+  - s3cmd
+gem_packages:
+  - librarian-chef
+  - knife-solo
+  - capistrano
+pip_packages:
+  - awscli
+  - docker-compose
+cask_packages:
+  - virtualbox
+  - vagrant

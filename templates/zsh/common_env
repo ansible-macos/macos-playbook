@@ -1,0 +1,2 @@
+export OPENSSL_INCLUDE_DIR=/usr/local/Cellar/openssl/1.0.2e_1/include
+export OPENSSL_ROOT_DIR=/usr/local/Cellar/openssl/1.0.2e_1/

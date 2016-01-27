@@ -1,0 +1,25 @@
+---
+- name: Install homebrew package(s) with brew options
+  homebrew: name={{ item.pkg }} install_options={{ item.opts }} state={{ item.state|default("latest") }}
+  with_items: brew_pkg_with_opts
+  when: brew_pkg_with_opts is defined
+
+- name: Install the homebrew packages
+  homebrew: name={{ item }} state=latest
+  with_items: brew_packages
+
+- name: Install the cask packages
+  homebrew_cask: name={{ item }}
+  with_items: cask_packages
+
+- name: Copy php.ini settings
+  template: src=templates/php.ini dest=/usr/local/etc/php/5.6/conf.d/php.user.ini
+
+- name: Copy php.ini settings
+  template: src=templates/ext-xdebug.ini dest=/usr/local/etc/php/5.6/conf.d/ext-xdebug.ini
+
+- name: Copy php.ini settings
+  template: src=templates/php.ini dest=/usr/local/etc/php/5.6/conf.d/php.user.ini
+
+- name: Set PSR2 as default
+  command: phpcs --config-set default_standard PSR2

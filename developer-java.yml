@@ -1,7 +1,0 @@
----
-- hosts: all
-  roles:
-  - role: osxc.packages
-    brew_taps: []
-    brew_packages:
-      - jenv # Multiple java versions manager

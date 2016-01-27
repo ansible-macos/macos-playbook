@@ -1,0 +1,8 @@
+---
+- hosts: all
+  vars:
+    user_email: luis.munoz.hdez@gmail.com
+    user_name: Luis Hdez
+  roles:
+  - role: osxw.developer-common
+  - role: osxw.developer-atom
