@@ -4,7 +4,7 @@ brew_taps:
 cask_packages:
   - sourcetree
   - sequel-pro
-  - robomongo
+  - mongochef
   - cyberduck
   - rdm
 brew_packages:

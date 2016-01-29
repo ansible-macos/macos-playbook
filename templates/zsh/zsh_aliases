@@ -23,6 +23,9 @@ alias ps='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type 
 alias psv='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && mvim'
 alias psa='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && atom .'
 
+# Common
+alias sshkey="cat ~/.ssh/id_rsa.pub; cat ~/.ssh/id_rsa.pub | pbcopy"
+
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
