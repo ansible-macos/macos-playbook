@@ -16,7 +16,7 @@
 
 - name: Install gem packages
   gem: name={{ item }}
-  with_items: gwm_packages
+  with_items: gem_packages
 
 - name: Install the cask packages
   homebrew_cask: name={{ item }}

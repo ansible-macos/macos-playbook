@@ -1,0 +1,21 @@
+---
+brew_taps:
+  - caskroom/fonts
+  - thoughtbot/formulae
+brew_packages:
+  - zsh
+  - the_silver_searcher # Command line searcher
+  - pick # Fuzzy finder command line tool to select options
+  - asciinema # Record terminal sessions to asciinema.org
+  - youtube-dl # media youtube downloader
+  - ffmpeg # media converter
+  - libav # media codecs
+  - lame # media codecs
+  - flac # media codecs
+cask_packages:
+  - font-inconsolata
+  - font-source-code-pro
+  - font-sauce-code-powerline
+npm_packages: []
+gem_packages: []
+pip_packages: []
