@@ -1,0 +1,19 @@
+---
+- name: Install the homebrew packages
+  homebrew: name={{ item }} state=latest
+  with_items: brew_packages
+
+- name: Install the cask packages
+  homebrew_cask: name={{ item }}
+  with_items: cask_packages
+
+- name: install node stable
+  command: n stable
+
+- name: Install npm packages
+  npm: name={{ item }} global=yes
+  with_items: npm_packages
+
+- name: Install gem packages
+  gem: name={{ item }}
+  with_items: gem_packages

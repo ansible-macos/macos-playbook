@@ -2,18 +2,5 @@
 brew_taps: []
 brew_packages:
   - n
-gem_packages:
-  - sass
-cask_packages: []
 npm_packages:
-  - less
-  - gulp
-  - grunt
-  - grunt-cli
-  - uglify-js # js compressor
-  - bower     # bower
-  - yo        # yeomaon yo
-  - mversion  # git bump version helper
-  - psi       # Web Page Speed
-  - jscs      # JS CodingStyle Linter
-  - eslint    # ES6 Linter
+  - iron-node

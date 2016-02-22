@@ -7,6 +7,8 @@ cask_packages:
   - mongochef
   - cyberduck
   - rdm
+  - font-hasklig
+  - font-source-code-pro
 brew_packages:
   - git
   - mercurial
@@ -16,3 +18,4 @@ brew_packages:
   - mongodb
   - mysql
   - redis
+  - rabbitmq

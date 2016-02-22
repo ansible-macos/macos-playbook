@@ -3,6 +3,7 @@ brew_taps:
   - homebrew/php
   - homebrew/dupes
   - homebrew/versions
+  - hhvm/hhvm
 brew_packages_with_opt:
   - pkg: php56
     opts: "enable-maintainer-zts,build-from-source"
@@ -11,6 +12,7 @@ brew_packages_with_opt:
   - pkg: php56-redis
     opts: "build-from-source"
 brew_packages:
+  - hhvm
   - phpbrew
   - php56-oauth
   - php56-amqp
