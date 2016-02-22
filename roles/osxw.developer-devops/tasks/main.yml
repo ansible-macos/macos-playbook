@@ -1,6 +1,6 @@
 ---
 - name: Tap hombrew formulas
-  homebrew_tap: name={{ item }} state=latest
+  homebrew_tap: name={{ item }}
   with_items: brew_taps
   when: brew_taps is defined
 
