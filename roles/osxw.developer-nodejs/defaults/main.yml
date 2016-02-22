@@ -2,5 +2,5 @@
 brew_taps: []
 brew_packages:
   - n
-npm_packages:
-  - iron-node
+npm_packages: []
+gem_packages: []
