@@ -25,11 +25,7 @@ Use the next commands to install ansible and run the playbooks
 
 ### Run the playbook
 
-    ansible-playbook all.yml
-
-If you want to run only the specific playbooks, you can use
-
-    ansible-playbook {{name}}.yml
+    ansible-playbook init.yml
 
 ## Common problems
 
