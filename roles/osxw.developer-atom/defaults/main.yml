@@ -6,7 +6,7 @@ npm_packages:
   - yaml-js
   - csslint
 brew_packages:
-  - n
+  - node
 cask_packages:
   - atom
   - font-inconsolata

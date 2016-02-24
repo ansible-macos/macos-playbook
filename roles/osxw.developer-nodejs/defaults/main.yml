@@ -1,6 +1,6 @@
 ---
 brew_taps: []
 brew_packages:
-  - n
+  - node
 npm_packages: []
 gem_packages: []
