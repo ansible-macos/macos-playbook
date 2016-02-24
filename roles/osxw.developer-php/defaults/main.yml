@@ -3,6 +3,7 @@ brew_taps:
   - homebrew/php
   - homebrew/dupes
   - homebrew/versions
+  - blackfireio/homebrew-blackfire
 brew_packages_with_opt:
   - pkg: php56
     opts: "enable-maintainer-zts,build-from-source"
@@ -32,3 +33,9 @@ brew_packages:
   - codeception
   - icu4c
   - composer
+  - blackfire-php56
+  - blackfire-php70
+  - blackfire-agent
+
+# blackfire-agent --register
+# brew services blackfire-agent start
