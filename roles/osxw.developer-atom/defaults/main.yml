@@ -36,5 +36,5 @@ atom_packages:
   - linter-htmlhint
   - linter-csslint
   - linter-eslint
-  - linter-jscs  
+  - linter-jscs
   - linter-docker

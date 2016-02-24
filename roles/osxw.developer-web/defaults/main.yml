@@ -2,6 +2,9 @@
 brew_taps: []
 brew_packages:
   - n
+brew_packages_with_opt:
+  - pkg: jmeter
+    opts: with-plugins
 gem_packages:
   - sass
 cask_packages:
@@ -11,10 +14,10 @@ npm_packages:
   - gulp
   - grunt
   - grunt-cli
-  - uglify-js # js compressor
-  - bower     # bower
-  - yo        # yeomaon yo
-  - mversion  # git bump version helper
-  - psi       # Web Page Speed
-  - jscs      # JS CodingStyle Linter
-  - eslint    # ES6 Linter
+  - uglify-js
+  - bower
+  - yo
+  - mversion
+  - psi
+  - jscs
+  - eslint
