@@ -19,7 +19,7 @@ alias eh="sudo nvim /etc/hosts"
 alias ph='$(history | cut -c8- | sort -u | pick)'
 alias pcd='cd $(find . -type d | pick)'
 alias pgcb='git checkout $(git branch | cut -c 3- | pick)='
-alias ps='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && clear'
+alias pso='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && clear'
 alias psv='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && mvim'
 alias psa='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && atom .'
 
