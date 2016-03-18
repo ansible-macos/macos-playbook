@@ -13,3 +13,17 @@
 - file: path=/usr/local/etc/nginx/sites-available state=directory
 - file: path=/usr/local/etc/nginx/sites-enabled state=directory
 - file: path=/usr/local/etc/nginx/conf.d state=directory
+
+- name: Project sources
+  file: path={{ project_sources_path }} recurse=yes state=directory group=staff
+
+- name: Copy nginx aliases
+  template: src=templates/aliases/nginx dest=~/.zsh/aliases/nginx
+
+- name: Copy nginx vhosts templates
+  template: src=templates/site-templates/{{ item }} dest=/usr/local/etc/nginx/sites-available/template.{{ item }}
+  with_items:
+    - php-ssl.conf
+    - php.conf
+
+- file: path={{ source_path }} recurse=yes state=directory group=staff
