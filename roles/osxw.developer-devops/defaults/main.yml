@@ -3,7 +3,6 @@ brew_taps: []
 npm_packages:
   - dockerlint
 brew_packages:
-  - n
   - python
   - ruby
   - docker

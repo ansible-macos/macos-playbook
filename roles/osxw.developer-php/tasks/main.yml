@@ -2,20 +2,43 @@
 - name: Tap hombrew formulas
   homebrew_tap: name={{ item }}
   with_items: brew_taps
-  when: brew_taps is defined
 
-- name: Install homebrew package(s) with brew options
+## General and tooling
+- name: Install common php packages
+  homebrew: name={{ item }} state=latest
+  with_items: php_brew
+
+- name: Set PSR2 as default
+  command: phpcs --config-set default_standard PSR2
+
+# blackfire-agent --register
+# brew services blackfire-agent start
+
+## php70
+## @todo add option to enable php70 as default
+- name: Install php70 homebrew package(s) with options
   homebrew: name={{ item.pkg }} install_options={{ item.opts }} state={{ item.state|default("latest") }}
-  with_items: brew_pkg_with_opts
-  when: brew_pkg_with_opts is defined
+  with_items: php70_brew_with_opts
 
 - name: Install the homebrew packages
   homebrew: name={{ item }} state=latest
-  with_items: brew_packages
+  with_items: php70_brew
 
-- name: Install the cask packages
-  homebrew_cask: name={{ item }}
-  with_items: cask_packages
+- name: Copy php.ini settings
+  template: src=templates/php.ini dest=/usr/local/etc/php/7.0/conf.d/php.user.ini
+
+- name: Copy php.ini settings
+  template: src=templates/ext-xdebug.ini dest=/usr/local/etc/php/7.0/conf.d/ext-xdebug.ini
+
+## php56
+## @todo add option to enable php70 as default
+- name: Install homebrew package(s) with brew options
+  homebrew: name={{ item.pkg }} install_options={{ item.opts }} state={{ item.state|default("latest") }}
+  with_items: php56_brew_with_opts
+
+- name: Install the homebrew packages
+  homebrew: name={{ item }} state=latest
+  with_items: php56_brew
 
 - name: Copy php.ini settings
   template: src=templates/php.ini dest=/usr/local/etc/php/5.6/conf.d/php.user.ini
@@ -25,6 +48,3 @@
 
 - name: Copy php.ini settings
   template: src=templates/php.ini dest=/usr/local/etc/php/5.6/conf.d/php.user.ini
-
-- name: Set PSR2 as default
-  command: phpcs --config-set default_standard PSR2

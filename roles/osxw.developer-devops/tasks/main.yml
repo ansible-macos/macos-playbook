@@ -26,3 +26,11 @@
 - name: Install the cask packages
   homebrew_cask: name={{ item }}
   with_items: cask_packages
+
+# vagrant plugin install vagrant-hostsupdater
+# vagrant plugin install vagrant-hostmanager
+## Add to playbook /etc/sudoers
+# # Allow passwordless startup of Vagrant with vagrant-hostsupdater.
+# Cmnd_Alias VAGRANT_HOSTS_ADD = /bin/sh -c echo "*" >> /etc/hosts
+# Cmnd_Alias VAGRANT_HOSTS_REMOVE = /usr/bin/sed -i -e /*/ d /etc/hosts
+# %admin ALL=(root) NOPASSWD: VAGRANT_HOSTS_ADD, VAGRANT_HOSTS_REMOVE
