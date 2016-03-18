@@ -1,0 +1,15 @@
+---
+- name: Tap hombrew formulas
+  homebrew_tap: name={{ item }}
+  with_items: brew_taps
+  when: brew_taps is defined
+
+- name: Install the homebrew packages
+  homebrew: name={{ item }} state=latest
+  with_items: brew_packages
+
+## Initial config
+- file: path=/usr/local/etc/nginx/ssl state=directory
+- file: path=/usr/local/etc/nginx/sites-available state=directory
+- file: path=/usr/local/etc/nginx/sites-enabled state=directory
+- file: path=/usr/local/etc/nginx/conf.d state=directory

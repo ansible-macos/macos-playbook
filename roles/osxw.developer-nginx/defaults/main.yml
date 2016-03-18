@@ -1,0 +1,4 @@
+---
+brew_taps: []
+npm_packages:
+  - nginx

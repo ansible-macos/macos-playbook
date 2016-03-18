@@ -10,7 +10,6 @@ gem_packages:
 cask_packages:
   - screaming-frog-seo-spider
 npm_packages:
-  - nginx
   - less
   - gulp
   - grunt

@@ -1,0 +1,22 @@
+alias nginx.start='sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
+alias nginx.stop='sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
+alias nginx.restart='nginx.stop && nginx.start'
+alias nginx.reload='sudo nginx -s reload'
+
+# Example of use
+#     nginx.log error mydoman.dev
+function nginx.log {
+  tail -250f "/var/log/nginx/${2}.${1}.log"
+}
+
+function nginx.ssl {
+  openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 -subj "/C=US/ST=State/L=Town/O=Office/CN=${1}" -keyout /usr/local/etc/nginx/ssl/${1}.key -out /usr/local/etc/nginx/ssl/${1}.crt
+}
+
+function nginx.enable {
+  ln -sfv /usr/local/etc/nginx/sites-available/${1} /usr/local/etc/nginx/sites-enabled/${1}
+}
+
+function nginx.disable {
+  rm -f /usr/local/etc/nginx/sites-enabled/${1}
+}
