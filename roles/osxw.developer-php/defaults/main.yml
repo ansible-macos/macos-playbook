@@ -36,7 +36,8 @@ php56_brew:
   - php56-http
   - php56-uuid
   - php56-xdebug
-  - php56-memcache
+  - php56-yaml
+  - php56-v8js
   - php56-memcached
   - blackfire-php56
 
@@ -44,19 +45,20 @@ php56_brew:
 php70_brew_with_opts:
   - pkg: php70
     opts: "build-from-source"
-  - pkg: php70-igbinary
-    opts: "build-from-source"
   - pkg: php70-redis
+    opts: "HEAD,build-from-source"
+  - pkg: php70-memcached
+    opts: "HEAD,build-from-source"
+  - pkg: php70-ssh2
+    opts: "HEAD,build-from-source"
+  - pkg: php70-yaml
     opts: "HEAD,build-from-source"
 php70_brew:
   - php70-oauth
   - php70-amqp
   - php70-mongodb
-  - php70-solr
   - php70-ssh2
-  - php70-http
   - php70-uuid
   - php70-xdebug
-  - php70-memcache
-  - php70-memcached
+  - php70-v8js
   - blackfire-php70
