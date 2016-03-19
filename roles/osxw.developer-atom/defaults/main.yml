@@ -23,6 +23,7 @@ atom_packages:
   - language-docker
   - language-twig
   - language-diff
+  - language-nginx
   - react
   - docblockr
   - autocomplete-php
