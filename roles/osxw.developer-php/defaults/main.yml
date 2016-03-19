@@ -54,6 +54,8 @@ php70_brew_with_opts:
   - pkg: php70-yaml
     opts: "HEAD,build-from-source"
 php70_brew:
+  - php70-apcu
+  - php70-apcu-bc
   - php70-oauth
   - php70-amqp
   - php70-mongodb

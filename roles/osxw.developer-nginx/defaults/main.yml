@@ -1,4 +1,5 @@
 ---
 brew_taps: []
-npm_packages:
-  - nginx
+brew_packages_with_opts:
+  - pkg: nginx
+    opts: "with-geoip"
