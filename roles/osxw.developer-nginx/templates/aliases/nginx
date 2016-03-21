@@ -5,7 +5,7 @@ alias nginx.reload='sudo nginx -s reload'
 alias nginx.edit="atom /usr/local/etc/nginx/"
 
 function nginx.log {
-  tail -250f "/var/log/nginx/${2}.${1}.log"
+  tail -250f "/usr/local/var/log/nginx/${2}.${1}.log"
 }
 
 function nginx.ssl {
