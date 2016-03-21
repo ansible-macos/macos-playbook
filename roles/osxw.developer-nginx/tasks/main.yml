@@ -32,5 +32,6 @@
   with_items:
     - php-ssl.conf
     - php-symfony-ssl.conf
+    - php-wordpress-ssl.conf
 
 - file: path={{ project_sources_path }} state=directory group=staff recurse=no
