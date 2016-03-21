@@ -53,6 +53,8 @@ alias phpcs_PSR1="phpcs --config-set default_standard PSR1"
 # Git
 alias gs="git status --short"
 alias gss="git status"
+alias gl='git log --graph --pretty=format:"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)" --abbrev-commit --date=relative'
+alias gls='git log --pretty=format:"%h - %an, %ar : %s" -n 20'
 alias gall='git add -u .'
 alias gamend='git commit --amend -m'
 alias gupmod='git commit -m "Update submodule"'
@@ -60,11 +62,10 @@ alias gc='git checkout'
 alias gcb='git checkout -b'
 alias gb='git branch -a'
 alias greset='git reset --hard'
-alias gl='git log --graph --pretty=format:"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)" --abbrev-commit --date=relative'
-alias gls='git log --pretty=format:"%h - %an, %ar : %s" -n 20'
-alias gsubpull='git pull && git submodule init && git submodule update && git submodule status'
 alias giff='git difftool'
 alias bump="mversion"
+alias git.check='alias git branch -r | xargs -t -n 1 git branch -r --contains'
+alias git.subpull='git pull && git submodule init && git submodule update && git submodule status'
 
 # Audio alias
 alias flac2mp3="for f in *.flac; do flac -cd "$f" | lame -b 320 - "${f%.*}.mp3"; done"
