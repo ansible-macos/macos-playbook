@@ -30,7 +30,7 @@ php56_brew_with_opts:
 php56_brew:
   - php56-oauth
   - php56-amqp
-  - php56-mongo  
+  - php56-mongo
   - php56-mongodb
   - php56-solr
   - php56-ssh2

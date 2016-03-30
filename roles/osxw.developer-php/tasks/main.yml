@@ -14,7 +14,6 @@
   ignore_errors: true
 
 ## php56
-## @todo add option to enable php70 as default
 - name: Ensure php56 is linked if installed
   command: brew link php56
   ignore_errors: true
@@ -69,9 +68,6 @@
     - blackfire-php70
   ignore_errors: true
 
-## Unlinks
-# brew unlink blackfire-php56 blackfire-php70
-
 ## General and tooling
 - name: Install common php packages
   homebrew: name={{ item }} state=latest
@@ -80,10 +76,8 @@
 - name: Set PSR2 as default
   command: phpcs --config-set default_standard PSR2
 
+- name: Copy php aliases
+  template: src=templates/aliases/php.sh dest=~/.zsh/aliases/php.sh
+
 # blackfire-agent --register
 # brew services blackfire-agent start
-
-## php switcher
-# unlink php
-# curl -L https://raw.githubusercontent.com/conradkleinespel/sphp-osx/master/sphp > /usr/local/bin/sphp
-# chmod +x /usr/local/bin/sphp
