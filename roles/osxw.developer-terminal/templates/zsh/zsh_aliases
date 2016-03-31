@@ -24,7 +24,7 @@ alias psv='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type
 alias psa='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && atom .'
 
 # Common
-alias sshkey="cat ~/.ssh/id_rsa.pub; cat ~/.ssh/id_rsa.pub | pbcopy"
+alias ssh.key="cat ~/.ssh/id_rsa.pub; cat ~/.ssh/id_rsa.pub | pbcopy"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -38,34 +38,9 @@ alias ds_remove="find . -type f -name '*.DS_Store' -ls -delete"
 alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
 
-# Tasks
-alias badge="tput bel" # Useful for long tasks it alerts on terminal on finish
-
 # Screenshots
 alias disableScreenShadow="defaults write com.apple.screencapture disable-shadow -bool true"
 alias enableScreenShadow="defaults write com.apple.screencapture disable-shadow -bool false"
-
-# PHP Aliases
-alias phpcs_symfony2="phpcs --config-set default_standard Symfony2"
-alias phpcs_PSR2="phpcs --config-set default_standard PSR2"
-alias phpcs_PSR1="phpcs --config-set default_standard PSR1"
-
-# Git
-alias gs="git status --short"
-alias gss="git status"
-alias gl='git log --graph --pretty=format:"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)" --abbrev-commit --date=relative'
-alias gls='git log --pretty=format:"%h - %an, %ar : %s" -n 20'
-alias gall='git add -u .'
-alias gamend='git commit --amend -m'
-alias gupmod='git commit -m "Update submodule"'
-alias gc='git checkout'
-alias gcb='git checkout -b'
-alias gb='git branch -a'
-alias greset='git reset --hard'
-alias giff='git difftool'
-alias bump="mversion"
-alias git.check='alias git branch -r | xargs -t -n 1 git branch -r --contains'
-alias git.subpull='git pull && git submodule init && git submodule update && git submodule status'
 
 # Audio alias
 alias flac2mp3="for f in *.flac; do flac -cd "$f" | lame -b 320 - "${f%.*}.mp3"; done"

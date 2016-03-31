@@ -1,3 +1,9 @@
+# phpcs
+alias phpcs.symfony2="phpcs --config-set default_standard Symfony2"
+alias phpcs.PSR2="phpcs --config-set default_standard PSR2"
+alias phpcs.PSR1="phpcs --config-set default_standard PSR1"
+
+# php
 function php.restart {
     currentversion="`php -r \"echo str_replace('.', '', substr(phpversion(), 0, 3));\"`"
     brew services restart php$currentversion

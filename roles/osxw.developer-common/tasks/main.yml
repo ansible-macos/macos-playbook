@@ -27,3 +27,6 @@
 
 - name: Copy global gitignore
   template: src=templates/git/gitignore dest=~/.gitignore
+
+- name: Copy git aliases
+  template: src=templates/aliases/git.sh dest=~/.zsh/aliases/git.sh
