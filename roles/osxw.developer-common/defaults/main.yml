@@ -19,4 +19,4 @@ brew_packages:
   - mysql
   - redis
   - rabbitmq
-  - typespeed
+  - letsencrypt
