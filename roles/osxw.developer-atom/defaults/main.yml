@@ -24,6 +24,7 @@ atom_packages:
   - language-twig
   - language-diff
   - language-nginx
+  - behat-atom
   - react
   - docblockr
   - autocomplete-php
