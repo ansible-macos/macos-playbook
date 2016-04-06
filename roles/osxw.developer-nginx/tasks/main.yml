@@ -28,7 +28,7 @@
   template: src=templates/conf/nginx.conf dest=/usr/local/etc/nginx/nginx.conf
 
 - name: Copy nginx vhosts templates
-  template: src=templates/site-templates/{{ item }} dest=/usr/local/etc/nginx/sites-available/template.{{ item }}
+  template: src=templates/site-templates/{{ item }} dest=/usr/local/etc/nginx/sites-available/templates/{{ item }}
   with_items:
     - php-ssl.conf
     - php-symfony-ssl.conf
