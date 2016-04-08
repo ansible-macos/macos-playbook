@@ -10,8 +10,10 @@
 
 ## Initial config
 - file: path=/usr/local/etc/nginx/ssl state=directory
+- file: path=/usr/local/etc/nginx/geoip state=directory
 - file: path=/usr/local/etc/nginx/sites-available state=directory
 - file: path=/usr/local/etc/nginx/sites-enabled state=directory
+- file: path=/usr/local/etc/nginx/sites-templates state=directory
 - file: path=/usr/local/etc/nginx/conf.d state=directory
 - file: path=/usr/local/var/log/nginx state=directory
 - file: path=/usr/local/var/nginx/fastcgi state=directory
@@ -27,8 +29,17 @@
 - name: Copy nginx conf
   template: src=templates/conf/nginx.conf dest=/usr/local/etc/nginx/nginx.conf
 
+- name: Copy nginx geoip conf
+  template: src=templates/conf/http_geoip.conf dest=/usr/local/etc/nginx/conf.d/http_geoip.conf
+
+- name: Download GeoIP
+  get_url: url=https://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz dest=/usr/local/etc/nginx/geoip/GeoIP.dat
+
+- name: Download GeoLiteCity
+  get_url: url=https://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz dest=/usr/local/etc/nginx/geoip/GeoLiteCity.dat
+
 - name: Copy nginx vhosts templates
-  template: src=templates/site-templates/{{ item }} dest=/usr/local/etc/nginx/sites-available/templates/{{ item }}
+  template: src=templates/{{ item }} dest=/usr/local/etc/nginx/sites-templates/{{ item }}
   with_items:
     - php-ssl.conf
     - php-symfony-ssl.conf
