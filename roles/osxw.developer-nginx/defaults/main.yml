@@ -1,5 +1,6 @@
 ---
-brew_taps: []
+brew_taps:
+  - homebrew/nginx
 brew_packages_with_opts:
-  - pkg: nginx
-    opts: "with-geoip"
+  - pkg: nginx-full
+    opts: "--with-upload-module,--with-upload-progress-module,--with-geoip2-module,--with-flv-module,--with-http2-module"

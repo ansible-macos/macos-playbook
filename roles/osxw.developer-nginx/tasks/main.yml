@@ -30,16 +30,22 @@
   template: src=templates/conf/nginx.conf dest=/usr/local/etc/nginx/nginx.conf
 
 - name: Copy nginx geoip conf
-  template: src=templates/conf/http_geoip.conf dest=/usr/local/etc/nginx/conf.d/http_geoip.conf
+  template: src=templates/conf/http_geoip2.conf dest=/usr/local/etc/nginx/conf.d/http_geoip2.conf
 
-- name: Download GeoIP
-  get_url: url=https://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz dest=/usr/local/etc/nginx/geoip/GeoIP.dat
+- name: Download GeoLite2-Country
+  get_url: url=http://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.mmdb.gz dest=/usr/local/etc/nginx/geoip/
 
-- name: Download GeoLiteCity
-  get_url: url=https://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz dest=/usr/local/etc/nginx/geoip/GeoLiteCity.dat
+- name: Unarchive GeoLite2-Country
+  command: gunzip -o GeoLite2-Country.mmdb.gz chdir=/usr/local/etc/nginx/geoip/
+
+- name: Download GeoLite2-City
+  get_url: url=http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz dest=/usr/local/etc/nginx/geoip/
+
+- name: Unarchive GeoLite2-Country
+  command: gunzip -o GeoLite2-City.mmdb.gz chdir=/usr/local/etc/nginx/geoip/
 
 - name: Copy nginx vhosts templates
-  template: src=templates/{{ item }} dest=/usr/local/etc/nginx/sites-templates/{{ item }}
+  template: src=site-templates/{{ item }} dest=/usr/local/etc/nginx/sites-templates/{{ item }}
   with_items:
     - php-ssl.conf
     - php-symfony-ssl.conf
