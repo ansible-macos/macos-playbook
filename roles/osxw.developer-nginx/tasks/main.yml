@@ -24,7 +24,7 @@
   file: path={{ project_sources_path }} recurse=yes state=directory group=staff
 
 - name: Copy nginx aliases
-  template: src=templates/aliases/nginx dest=~/.zsh/aliases/nginx
+  template: src=templates/aliases/nginx.sh dest=~/.zsh/aliases/nginx.sh
 
 - name: Copy nginx conf
   template: src=templates/conf/nginx.conf dest=/usr/local/etc/nginx/nginx.conf
