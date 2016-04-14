@@ -9,17 +9,20 @@ function nginx.log {
 }
 
 function nginx.ssl {
-  mkdir -p /usr/local/etc/nginx/ssl/${1}
+  mkdir -p /usr/local/etc/nginx/ssl/${1}/${2}
   openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 -subj "/C=US/ST=State/L=Town/O=Office/CN=${1}" -keyout /usr/local/etc/nginx/ssl/${1}/${2}.key -out /usr/local/etc/nginx/ssl/${1}/${2}.crt
 }
 
 function nginx.create {
   mkdir -p /usr/local/etc/nginx/sites-available/${1}/
   mkdir -p /usr/local/var/log/nginx/${1}/
+
+  nginx.ssl ${1} ${2}
   # @todo Add a task to create confs from templates
 }
 
 function nginx.enable {
+  mkdir -p /usr/local/etc/nginx/sites-enabled/${1}/
   ln -sfv /usr/local/etc/nginx/sites-available/${1}/${2}.conf /usr/local/etc/nginx/sites-enabled/${1}/${2}.conf
 }
 
