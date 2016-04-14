@@ -45,10 +45,10 @@
   command: gunzip -o GeoLite2-City.mmdb.gz chdir=/usr/local/etc/nginx/geoip/
 
 - name: Copy nginx vhosts templates
-  template: src=site-templates/{{ item }} dest=/usr/local/etc/nginx/sites-templates/{{ item }}
+  copy: src=templates/sites-templates/{{ item }} dest=/usr/local/etc/nginx/sites-templates/
   with_items:
-    - php-ssl.conf
-    - php-symfony-ssl.conf
-    - php-wordpress-ssl.conf
+    - php.conf
+    - symfony.conf
+    - wordpress.conf
 
 - file: path={{ project_sources_path }} state=directory group=staff recurse=no
