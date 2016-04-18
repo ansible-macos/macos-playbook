@@ -1,4 +1,5 @@
 ---
+
 - name: Tap hombrew formulas
   homebrew_tap: name={{ item }}
   with_items: brew_taps
@@ -36,13 +37,13 @@
   get_url: url=http://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.mmdb.gz dest=/usr/local/etc/nginx/geoip/
 
 - name: Unarchive GeoLite2-Country
-  command: gunzip -o GeoLite2-Country.mmdb.gz chdir=/usr/local/etc/nginx/geoip/
+  command: gunzip -d GeoLite2-Country.mmdb.gz chdir=/usr/local/etc/nginx/geoip/
 
 - name: Download GeoLite2-City
   get_url: url=http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz dest=/usr/local/etc/nginx/geoip/
 
 - name: Unarchive GeoLite2-Country
-  command: gunzip -o GeoLite2-City.mmdb.gz chdir=/usr/local/etc/nginx/geoip/
+  command: gunzip -d GeoLite2-City.mmdb.gz chdir=/usr/local/etc/nginx/geoip/
 
 - name: Copy nginx vhosts templates
   copy: src=templates/sites-templates/{{ item }} dest=/usr/local/etc/nginx/sites-templates/
