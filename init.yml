@@ -6,10 +6,10 @@
     date_timezone: Europe/Madrid
     project_sources_path: /Volumes/work-data/sources/
   roles:
-    - role: osxw.developer-common
-    - role: osxw.developer-terminal
-    - role: osxw.developer-php
+    # - role: osxw.developer-common
+    # - role: osxw.developer-terminal
+    # - role: osxw.developer-php
     - role: osxw.developer-nginx
-    - role: osxw.developer-atom
-    - role: osxw.developer-nodejs
-    - role: osxw.developer-devops
+    # - role: osxw.developer-atom
+    # - role: osxw.developer-nodejs
+    # - role: osxw.developer-devops
