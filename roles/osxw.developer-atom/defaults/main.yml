@@ -15,6 +15,10 @@ cask_packages:
 atom_packages:
   - atomatigit
   - trailing-spaces
+  - auto-detect-indentation
+  - highlight-selected
+  - less-than-slash
+  - quick-editor
   - editorconfig
   - emmet
   - pigments
