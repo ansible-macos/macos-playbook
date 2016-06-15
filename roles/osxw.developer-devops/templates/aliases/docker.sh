@@ -10,3 +10,9 @@ function dkr.rm.all {
 function dkr.volume.rm.all {
     docker volume rm `docker volume ls -q`
 }
+
+function dkr.clear {
+    dkr.stop.all
+    dkr.rm.all
+    dkr.volume.rm.all
+}
