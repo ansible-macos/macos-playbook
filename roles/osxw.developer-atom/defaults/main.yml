@@ -34,6 +34,7 @@ atom_packages:
   - autocomplete-php
   - atom-autocomplete-php
   - atom-symfony2
+  - php-getters-setters
   - linter
   - linter-php
   - linter-phpcs
