@@ -8,6 +8,7 @@ brew_packages:
   - ruby
   - docker
   - s3cmd
+  - libmaxminddb
 gem_packages:
   - librarian-chef
   - knife-solo
