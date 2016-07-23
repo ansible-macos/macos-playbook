@@ -9,6 +9,8 @@ brew_packages:
   - docker
   - s3cmd
   - libmaxminddb
+  - tor
+  - privoxy
 gem_packages:
   - librarian-chef
   - knife-solo

@@ -27,6 +27,9 @@
   homebrew_cask: name={{ item }}
   with_items: cask_packages
 
+# Privoxy /usr/local/etc/privoxy/config
+# forward-socks5   /               127.0.0.1:9050 .
+
 # vagrant plugin install vagrant-hostsupdater
 # vagrant plugin install vagrant-hostmanager
 ## Add to playbook /etc/sudoers
