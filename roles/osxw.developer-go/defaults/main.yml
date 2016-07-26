@@ -1,0 +1,9 @@
+---
+brew_taps: []
+go_brew:
+  - go
+
+## Defaults for php56
+go_brew_with_opts: []
+  # - pkg: php56
+  #   opts: "enable-maintainer-zts,build-from-source"
