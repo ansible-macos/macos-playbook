@@ -1,0 +1,8 @@
+---
+brew_taps: []
+npm_packages: []
+brew_packages: []
+gem_packages: []
+pip_packages: []
+cask_packages:
+  - rstudio
