@@ -1,18 +1,27 @@
-# Docker: dkr
-function dkr.stop.all {
+#!/bin/bash
+# docker.*
+function docker.stop.all {
     docker stop `docker ps -a -q`
 }
 
-function dkr.rm.all {
+function docker.rm.all {
     docker rm `docker ps -a -q`
 }
 
-function dkr.volume.rm.all {
+function docker.volume.rm.all {
     docker volume rm `docker volume ls -q`
 }
 
-function dkr.clear {
-    dkr.stop.all
-    dkr.rm.all
-    dkr.volume.rm.all
+function docker.rmi.all {
+    docker rmi $(docker images -q)
+}
+
+function docker.rmi.none {
+    docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
+}
+
+function docker.clear {
+    docker.stop.all
+    docker.rm.all
+    docker.volume.rm.all
 }
