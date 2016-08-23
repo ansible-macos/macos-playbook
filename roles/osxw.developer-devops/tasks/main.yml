@@ -27,6 +27,9 @@
   homebrew_cask: name={{ item }}
   with_items: cask_packages
 
+- name: Copy php aliases
+  template: src=templates/aliases/docker.sh dest=~/.zsh/aliases/docker.sh
+
 # Privoxy /usr/local/etc/privoxy/config
 # forward-socks5   /               127.0.0.1:9050 .
 
