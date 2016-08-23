@@ -11,6 +11,7 @@ brew_packages:
   - libmaxminddb
   - tor
   - privoxy
+  - docker-machine
 gem_packages:
   - librarian-chef
   - knife-solo
