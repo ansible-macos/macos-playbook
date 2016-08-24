@@ -13,35 +13,6 @@
     - php70
   ignore_errors: true
 
-## php56
-# - name: Ensure php56 is linked if installed
-#   command: brew link php56
-#   ignore_errors: true
-#
-# - name: Install homebrew package(s) with brew options
-#   homebrew: name={{ item.pkg }} install_options={{ item.opts }} state={{ item.state|default("latest") }}
-#   with_items: "{{ php56_brew_with_opts }}"
-#
-# - name: Install the homebrew packages
-#   homebrew: name={{ item }} state=latest
-#   with_items: "{{ php56_brew }}"
-#
-# - name: Copy php.ini settings
-#   template: src=templates/php.ini dest=/usr/local/etc/php/5.6/conf.d/php.user.ini
-#
-# - name: Copy php.ini settings
-#   template: src=templates/ext-xdebug.ini dest=/usr/local/etc/php/5.6/conf.d/ext-xdebug.ini
-#
-# - name: Copy php.ini settings
-#   template: src=templates/php.ini dest=/usr/local/etc/php/5.6/conf.d/php.user.ini
-#
-# - name: Unlink php56
-#   command: brew unlink {{ item }}
-#   with_items:
-#     - php56
-#     - blackfire-php56
-#   ignore_errors: true
-
 ## php70
 - name: Ensure php70 is linked if installed
   command: brew link php70

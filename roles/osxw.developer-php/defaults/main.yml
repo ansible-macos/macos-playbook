@@ -19,33 +19,9 @@ php_brew:
   - composer
   - blackfire-agent
 
-## Defaults for php56
-php56_brew_with_opts:
-  - pkg: php56
-    opts: "enable-maintainer-zts,build-from-source"
-  - pkg: php56-igbinary
-    opts: "build-from-source"
-  - pkg: php56-redis
-    opts: "build-from-source"
-php56_brew:
-  - php56-oauth
-  - php56-amqp
-  - php56-mongo
-  - php56-mongodb
-  - php56-solr
-  - php56-ssh2
-  - php56-http
-  - php56-uuid
-  - php56-xdebug
-  - php56-yaml
-  - php56-v8js
-  - php56-memcached
-  - blackfire-php56
-
-## Defaults for php70
 php70_brew_with_opts:
   - pkg: php70
-    opts: "build-from-source"
+    opts: "without-apache,with-fpm,build-from-source"
   - pkg: php70-redis
     opts: "HEAD,build-from-source"
   - pkg: php70-memcached
