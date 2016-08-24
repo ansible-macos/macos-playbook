@@ -1,7 +1,7 @@
 ---
 brew_taps: []
 npm_packages:
-  - dockerlint
+  - n
   - letsencrypt-cli
 brew_packages:
   - python
