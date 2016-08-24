@@ -9,9 +9,9 @@
     cask_packages:
       - google-chrome
       - firefox
-      - flash
       - utorrent
-      - mplayerx
+      - vlc-player
       - skype
       - slack
       - discord
+      #- flash

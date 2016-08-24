@@ -19,5 +19,4 @@ brew_packages:
   - mongodb
   - mysql
   - redis
-  - rabbitmq
   - letsencrypt

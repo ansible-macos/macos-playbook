@@ -22,7 +22,7 @@
 - file: path=/usr/local/var/nginx/client_body state=directory
 
 - name: Project sources
-  file: path={{ project_sources_path }} recurse=yes state=directory group=staff
+  file: path={{ project_sources_path }} state=directory group=staff
 
 - name: Copy nginx aliases
   template: src=templates/aliases/nginx.sh dest=~/.zsh/aliases/nginx.sh
