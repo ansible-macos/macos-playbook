@@ -13,4 +13,4 @@
     # - role: osxw.developer-atom
     # - role: osxw.developer-nodejs
     # - role: osxw.developer-devops
-    - role: osxw.developer-php
+    - role: osxw.developer-nvim

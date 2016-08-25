@@ -13,7 +13,7 @@ alias o="open"
 alias oo="open ."
 
 # Edit common files
-alias eh="sudo nvim /etc/hosts"
+alias eh="sudo $EDITOR /etc/hosts"
 
 # Pick alias
 alias ph='$(history | cut -c8- | sort -u | pick)'

@@ -1,8 +1,13 @@
 ---
-brew_taps: []
+brew_taps:
+  - homebrew/science
 npm_packages: []
 brew_packages: []
-gem_packages: []
 pip_packages: []
+apm_packages:
+  - language-r
+  - autocomplete-R
+gem_packages: []
 cask_packages:
+  - xquartz
   - rstudio
