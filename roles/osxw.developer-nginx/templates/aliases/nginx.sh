@@ -2,7 +2,7 @@ alias nginx.start='sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.ngin
 alias nginx.stop='sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
 alias nginx.restart='nginx.stop && nginx.start'
 alias nginx.reload='sudo nginx -s reload'
-alias nginx.edit="atom /usr/local/etc/nginx/"
+alias nginx.edit="$VISUAL /usr/local/etc/nginx/"
 
 function nginx.log {
   tail -250f "/usr/local/var/log/nginx/${1}/${2}.${3}.log"
