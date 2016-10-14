@@ -26,6 +26,7 @@ Thumbs.db
 
 # Ides
 .idea
+.Rhistory
 *.xcuserstate
 
 # Tools
