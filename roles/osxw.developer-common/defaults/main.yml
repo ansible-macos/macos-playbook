@@ -1,6 +1,7 @@
 ---
 brew_taps:
   - gapple/services
+  - caskroom/fonts
 cask_packages:
   - sourcetree
   - sequel-pro
