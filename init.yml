@@ -14,5 +14,5 @@
     - role: osxw.developer-nodejs
     - role: osxw.developer-web
     - role: osxw.developer-devops
-    # - role: osxw.developer-datascience
-    # - role: osxw.developer-nvim
+    - role: osxw.developer-datascience
+    - role: osxw.developer-nvim

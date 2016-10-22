@@ -7,8 +7,8 @@ brew_packages_with_opt:
     opts: with-plugins
 gem_packages:
   - sass
-cask_packages:
-  - screaming-frog-seo-spider
+# cask_packages:
+#   - screaming-frog-seo-spider
 npm_packages:
   - less
   - gulp

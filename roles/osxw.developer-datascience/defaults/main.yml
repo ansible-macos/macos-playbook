@@ -2,7 +2,7 @@
 brew_taps:
   - homebrew/science
 npm_packages: []
-brew_packages: []
+brew_packages: []
 pip_packages: []
 apm_packages:
   - language-r

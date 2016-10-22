@@ -14,7 +14,7 @@ export PATH="$PATH:/usr/local/opt/php56/bin"
 export PATH="$PATH:/usr/local/share/python"
 
 ## Common envs
-export VISUAL=nvim
+export VISUAL=vim
 export EDITOR="$VISUAL"
 
 ## Source all environment files
