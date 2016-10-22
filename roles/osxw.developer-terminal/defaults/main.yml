@@ -15,7 +15,6 @@ brew_packages:
 cask_packages:
   - font-inconsolata
   - font-source-code-pro
-  - font-sauce-code-powerline
 npm_packages: []
 gem_packages: []
 pip_packages: []
