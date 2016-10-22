@@ -11,6 +11,7 @@
     - role: osxw.developer-go
     - role: osxw.developer-nginx
     - role: osxw.developer-atom
+    - role: osxw.developer-php
     - role: osxw.developer-nodejs
     - role: osxw.developer-web
     - role: osxw.developer-devops
