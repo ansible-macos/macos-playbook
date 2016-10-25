@@ -1,5 +1,4 @@
 ---
-# Here we describe every software we may want to install
 - hosts: all
   roles:
   - role: osxc.packages
@@ -9,7 +8,7 @@
     cask_packages:
       - google-chrome
       - firefox
-      - utorrent
+      - transmission
       - vlc
       - skype
       - slack

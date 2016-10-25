@@ -17,3 +17,4 @@
     - role: osxw.developer-devops
     - role: osxw.developer-datascience
     - role: osxw.developer-nvim
+    - role: osxw.user
