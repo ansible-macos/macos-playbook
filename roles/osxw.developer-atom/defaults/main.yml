@@ -18,6 +18,7 @@ atom_packages:
   - trailing-spaces
   - auto-detect-indentation
   - highlight-selected
+  - highlight-bad-chars
   - less-than-slash
   - quick-editor
   - editorconfig
