@@ -11,7 +11,9 @@
   with_items: pip3_packages
 
 - name: Get repo nvim-gecko
-  git: repo=ttps://github.com/luishdez/neovim-gecko.git dest=~/.config/nvim accept_hostkey=true
+  git: repo=https://github.com/luishdez/neovim-gecko.git dest=~/.config/nvim accept_hostkey=true
 
 - name: Setup vim-plug
   command: curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# @todo chmod 755 to -R with sudo ~/.local/share/nvim
