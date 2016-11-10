@@ -24,7 +24,7 @@ Thumbs.db
 *~
 .*.swp
 
-# Ides
+# Ides
 .idea
 .Rhistory
 *.xcuserstate

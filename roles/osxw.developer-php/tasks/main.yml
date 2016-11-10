@@ -13,14 +13,14 @@
     - php70
   ignore_errors: true
 
-## php70
+## php70
 - name: Ensure php70 is linked if installed
   command: brew link php70
   ignore_errors: true
 
 - name: Install php70 homebrew package(s) with options
   homebrew: name={{ item.pkg }} install_options={{ item.opts }} state={{ item.state|default("latest") }}
-  with_items: "{{ php70_brew_with_opts }}"
+  with_items: "{{ php70_brew_with_opts }}"
 
 - name: Install the homebrew packages
   homebrew: name={{ item }} state=latest

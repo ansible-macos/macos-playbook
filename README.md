@@ -23,7 +23,7 @@ Use the next commands to install ansible and run the playbooks
     ansible-galaxy install -r requirements.yml
     chmod -x ./inventory
 
-### Run the playbook
+### Run the playbook
 
     ansible-playbook init.yml
 

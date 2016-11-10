@@ -1,4 +1,4 @@
-# Paths
+# Paths
 alias dt="cd ~/Desktop"
 alias dl="cd ~/Downloads"
 alias do="cd ~/Documents"
@@ -12,7 +12,7 @@ alias v="vim"
 alias o="open"
 alias oo="open ."
 
-# Edit common files
+# Edit common files
 alias eh="sudo $VISUAL /etc/hosts"
 
 # Pick alias

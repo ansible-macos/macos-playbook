@@ -9,7 +9,7 @@
   homebrew: name={{ item.pkg }} install_options={{ item.opts }} state={{ item.state|default("latest") }}
   with_items: "{{ brew_packages_with_opts }}"
 
-## Initial config
+## Initial config
 - file: path=/usr/local/etc/nginx/ssl state=directory
 - file: path=/usr/local/etc/nginx/geoip state=directory
 - file: path=/usr/local/etc/nginx/sites-available state=directory
