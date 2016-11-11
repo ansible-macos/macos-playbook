@@ -40,7 +40,9 @@
   command: chsh -s /bin/zsh
 
 # @todo Setup terminal Theme
-# @todo symlink keys from dropbox or S3
+# @todo symlink keys from dropbox, S3 or iCloud
+
+# @todo Add https://www.npmjs.com/package/hostile
 
 # - name: Ensure 600 for ~/.ssh/id_rsa
 #   command: chmod 600 ~/.ssh/id_rsa
