@@ -4,7 +4,6 @@ brew_packages: []
 cask_packages:
   - sketch
   - sketch-toolbox
-  - sketch-tool
-  - principle
+  - origami-studio
   - adobe-photoshop-cc
   - adobe-illustrator-cc

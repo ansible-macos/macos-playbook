@@ -16,15 +16,3 @@
 - name: Install the cask packages
   homebrew_cask: name={{ item }}
   with_items: cask_packages
-
-- name: Copy php.ini settings
-  template: src=templates/php/php.ini dest=/usr/local/etc/php/5.6/conf.d/php.user.ini
-
-- name: Copy php.ini settings
-  template: src=templates/php/ext-xdebug.ini dest=/usr/local/etc/php/5.6/conf.d/ext-xdebug.ini
-
-- name: Copy php.ini settings
-  template: src=templates/php/php.ini dest=/usr/local/etc/php/5.6/conf.d/php.user.ini
-
-- name: Set PSR2 as default
-  command: phpcs --config-set default_standard PSR2
