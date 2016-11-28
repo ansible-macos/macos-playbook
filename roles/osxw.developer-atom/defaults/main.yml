@@ -24,6 +24,7 @@ atom_packages:
   - editorconfig
   - emmet
   - pigments
+  - api-workbench
   - file-icons
   - tabularize
   - language-docker
