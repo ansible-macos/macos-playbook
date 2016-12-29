@@ -11,11 +11,6 @@ export PATH="$PATH:/usr/local/share/npm/bin"
 export PATH="$PATH:/usr/local/opt/ruby/bin"
 export PATH="$PATH:/Users/$USER/.gem/ruby/2.3.0/bin"
 export PATH="$PATH:/usr/local/opt/php56/bin"
-export PATH="$PATH:/usr/local/share/python"
-
-## Common envs
-export VISUAL=vim
-export EDITOR="$VISUAL"
 
 ## Source all environment files
 for f in ~/.env_*; do

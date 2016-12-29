@@ -36,6 +36,9 @@
 - name: Copy zsh_aliases
   template: src=templates/zsh/zsh_aliases dest=~/.zsh/aliases/common
 
+- name: Copy env_common
+  template: src=templates/env_common dest=~/.env_common
+
 - name: Make zsh as default terminal
   command: chsh -s /bin/zsh
 

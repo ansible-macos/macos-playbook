@@ -4,6 +4,7 @@ alias dl="cd ~/Downloads"
 alias do="cd ~/Documents"
 alias db="cd ~/Dropbox"
 alias lb="cd ~/Library"
+alias sr="cd $SOURCES"
 
 # Services
 alias h="history"
