@@ -2,5 +2,6 @@
 brew_taps: []
 brew_packages:
   - node
-npm_packages: []
+npm_packages:
+  - trymodule
 gem_packages: []

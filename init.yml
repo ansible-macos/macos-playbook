@@ -7,7 +7,7 @@
     project_sources_path: /Volumes/work-data/sources/
   roles:
     # - role: osxw.developer-common
-    # - role: osxw.developer-terminal
+    - role: osxw.developer-terminal
     # - role: osxw.developer-go
     # - role: osxw.developer-nginx
     # - role: osxw.developer-atom
@@ -16,5 +16,5 @@
     # - role: osxw.developer-web
     # - role: osxw.developer-devops
     # - role: osxw.developer-datascience
-    - role: osxw.developer-nvim
+    # - role: osxw.developer-nvim
     # - role: osxw.user

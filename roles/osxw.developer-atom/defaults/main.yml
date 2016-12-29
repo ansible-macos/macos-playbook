@@ -22,6 +22,7 @@ atom_packages:
   - less-than-slash
   - quick-editor
   - editorconfig
+  - es6-javascript
   - emmet
   - pigments
   - api-workbench
