@@ -6,15 +6,15 @@
     date_timezone: Europe/Madrid
     project_sources_path: /Volumes/work-data/sources/
   roles:
-    # - role: developer-common
+    - role: developer-common
     - role: developer-terminal
-    # - role: developer-go
-    # - role: developer-nginx
-    # - role: developer-atom
-    # - role: developer-php
-    # - role: developer-nodejs
-    # - role: developer-web
-    # - role: developer-devops
-    # - role: developer-datascience
-    # - role: developer-nvim
-    # - role: user
+    - role: developer-go
+    - role: developer-nginx
+    - role: developer-atom
+    - role: developer-php
+    - role: developer-nodejs
+    - role: developer-web
+    - role: developer-devops
+    - role: developer-datascience
+    - role: developer-nvim
+    - role: user

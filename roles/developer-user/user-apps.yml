@@ -3,7 +3,6 @@
   roles:
   - role: osxc.packages
     brew_taps:
-      - caskroom/fonts
       - gapple/services
     cask_packages:
       - google-chrome
