@@ -2,14 +2,6 @@
 brew_taps:
   - gapple/services
   - caskroom/fonts
-cask_packages:
-  - sourcetree
-  - sequel-pro
-  - mongochef
-  - cyberduck
-  - rdm
-  - font-hasklig
-  - font-source-code-pro
 brew_packages:
   - git
   - git-flow
@@ -21,3 +13,11 @@ brew_packages:
   - mysql
   - redis
   - letsencrypt
+cask_packages:
+  - sourcetree
+  - sequel-pro
+  - mongochef
+  - cyberduck
+  - rdm
+  - font-hasklig
+  - font-source-code-pro
