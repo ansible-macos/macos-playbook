@@ -1,6 +1,6 @@
 ---
-brew_taps:
+default_brew_taps:
   - homebrew/nginx
-brew_packages_with_opts:
-  - pkg: nginx-full
-    opts: "with-upload-module,with-upload-progress-module,with-geoip2-module,with-flv,with-http2"
+default_brew_packages:
+  - name: nginx-full
+    options: with-upload-module,with-upload-progress-module,with-geoip2-module,with-flv,with-http2

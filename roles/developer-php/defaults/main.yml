@@ -1,11 +1,10 @@
 ---
-brew_taps:
+default_brew_taps:
   - homebrew/php
   - homebrew/dupes
   - homebrew/versions
   - blackfireio/homebrew-blackfire
-
-php_brew:
+default_php_brew:
   - phpbrew
   - php-code-sniffer
   - php-cs-fixer
@@ -18,19 +17,16 @@ php_brew:
   - icu4c
   - composer
   - blackfire-agent
-
-php70_brew_with_opts:
-  - pkg: php70
-    opts: "without-apache,with-fpm,build-from-source"
-  - pkg: php70-redis
-    opts: "HEAD,build-from-source"
-  - pkg: php70-memcached
-    opts: "HEAD,build-from-source"
-  - pkg: php70-ssh2
-    opts: "HEAD,build-from-source"
-  - pkg: php70-yaml
-    opts: "HEAD,build-from-source"
-php70_brew:
+  - name: php70
+    options: "without-apache,with-fpm,build-from-source"
+  - name: php70-redis
+    options: "HEAD,build-from-source"
+  - name: php70-memcached
+    options: "HEAD,build-from-source"
+  - name: php70-ssh2
+    options: "HEAD,build-from-source"
+  - name: php70-yaml
+    options: "HEAD,build-from-source"
   - php70-apcu
   - php70-apcu-bc
   - php70-oauth

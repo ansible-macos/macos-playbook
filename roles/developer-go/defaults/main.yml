@@ -1,5 +1,0 @@
----
-brew_taps: []
-go_brew:
-  - go
-go_brew_with_opts: []

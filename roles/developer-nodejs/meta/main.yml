@@ -17,6 +17,5 @@ galaxy_info:
     - packaging
 dependencies:
   - role: ansible-macos.packages
-    brew_taps: "{{ default_brew_taps }}"
     brew_packages: "{{ default_brew_packages }}"
-    cask_packages: "{{ default_cask_packages }}"
+    npm_packages: "{{ default_npm_packages }}"

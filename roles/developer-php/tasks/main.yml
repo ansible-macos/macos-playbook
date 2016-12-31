@@ -1,54 +1,11 @@
 ---
-- name: Tap hombrew formulas
-  homebrew_tap: name={{ item }}
-  with_items: brew_taps
-
-## Common unlinks
-- name: Unlink common php
-  command: brew unlink {{ item }}
-  with_items:
-    #- php56
-    #- blackfire-php56
-    - blackfire-php70
-    - php70
-  ignore_errors: true
-
-## php70
-- name: Ensure php70 is linked if installed
-  command: brew link php70
-  ignore_errors: true
-
-- name: Install php70 homebrew package(s) with options
-  homebrew: name={{ item.pkg }} install_options={{ item.opts }} state={{ item.state|default("latest") }}
-  with_items: "{{ php70_brew_with_opts }}"
-
-- name: Install the homebrew packages
-  homebrew: name={{ item }} state=latest
-  with_items: "{{ php70_brew }}"
-
 - name: Copy php.ini settings
   template: src=templates/php.ini dest=/usr/local/etc/php/7.0/conf.d/php.user.ini
-
 - name: Copy php.ini settings
   template: src=templates/ext-xdebug.ini dest=/usr/local/etc/php/7.0/conf.d/ext-xdebug.ini
-
-- name: Unlink php70
-  command: brew unlink {{ item }}
-  with_items:
-    - php70
-    - blackfire-php70
-  ignore_errors: true
-
-## General and tooling
-- name: Install common php packages
-  homebrew: name={{ item }} state=latest
-  with_items: "{{ php_brew }}"
-
 - name: Set PSR2 as default
   command: phpcs --config-set default_standard PSR2
-
 - name: Copy php aliases
   template: src=templates/aliases/php.sh dest=~/.zsh/aliases/php.sh
 
-# blackfire-agent --register
-# brew services blackfire-agent start
+# @todo blackfire-agent --register

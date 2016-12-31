@@ -1,8 +1,8 @@
 ---
-brew_taps:
+default_brew_taps:
   - caskroom/fonts
   - thoughtbot/formulae
-brew_packages:
+default_rew_packages:
   - zsh
   - the_silver_searcher # Command line searcher
   - pick # Fuzzy finder command line tool to select options
@@ -12,9 +12,6 @@ brew_packages:
   - libav # media codecs
   - lame # media codecs
   - flac # media codecs
-cask_packages:
+default_cask_packages:
   - font-inconsolata
   - font-source-code-pro
-npm_packages: []
-gem_packages: []
-pip_packages: []

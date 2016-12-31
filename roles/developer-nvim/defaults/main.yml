@@ -1,8 +1,7 @@
 ---
-brew_taps: []
-pip3_packages:
+default_pip_packages:
   - cargo
-brew_packages:
+default_brew_packages:
   - neovim/neovim/neovim
   - python3
   - rust

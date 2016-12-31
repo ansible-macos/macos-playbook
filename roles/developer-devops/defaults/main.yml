@@ -1,9 +1,8 @@
 ---
-brew_taps: []
-npm_packages:
+default_npm_packages:
   - n
   - letsencrypt-cli
-brew_packages:
+default_brew_packages:
   - python
   - ruby
   - docker
@@ -12,14 +11,13 @@ brew_packages:
   - tor
   - privoxy
   - docker-machine
-gem_packages:
+default_gem_packages:
   - librarian-chef
   - knife-solo
   - capistrano
-pip_packages:
+default_pip_packages:
   - awscli
   - docker-compose
-cask_packages:
+default_cask_packages:
   - virtualbox
   - vagrant
-# vagrant plugin install vagrant-hostsupdater

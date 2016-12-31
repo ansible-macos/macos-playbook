@@ -1,14 +1,4 @@
 ---
-
-- name: Tap hombrew formulas
-  homebrew_tap: name={{ item }}
-  with_items: brew_taps
-  when: brew_taps is defined
-
-- name: Install homebrew package(s) with brew options
-  homebrew: name={{ item.pkg }} install_options={{ item.opts }} state={{ item.state|default("latest") }}
-  with_items: "{{ brew_packages_with_opts }}"
-
 ## Initial config
 - file: path=/usr/local/etc/nginx/ssl state=directory
 - file: path=/usr/local/etc/nginx/geoip state=directory
@@ -20,36 +10,26 @@
 - file: path=/usr/local/var/nginx/fastcgi state=directory
 - file: path=/usr/local/var/nginx/proxy state=directory
 - file: path=/usr/local/var/nginx/client_body state=directory
-
 - name: Project sources
   file: path={{ project_sources_path }} state=directory group=staff
-
 - name: Copy nginx aliases
   template: src=templates/aliases/nginx.sh dest=~/.zsh/aliases/nginx.sh
-
 - name: Copy nginx conf
   template: src=templates/conf/nginx.conf dest=/usr/local/etc/nginx/nginx.conf
-
 - name: Copy nginx geoip conf
   template: src=templates/conf/http_geoip2.conf dest=/usr/local/etc/nginx/conf.d/http_geoip2.conf
-
 - name: Download GeoLite2-Country
   get_url: url=http://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.mmdb.gz dest=/usr/local/etc/nginx/geoip/
-
 - name: Unarchive GeoLite2-Country
   command: gunzip -f -d GeoLite2-Country.mmdb.gz chdir=/usr/local/etc/nginx/geoip/
-
 - name: Download GeoLite2-City
   get_url: url=http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz dest=/usr/local/etc/nginx/geoip/
-
 - name: Unarchive GeoLite2-Country
   command: gunzip -f -d GeoLite2-City.mmdb.gz chdir=/usr/local/etc/nginx/geoip/
-
 - name: Copy nginx vhosts templates
   copy: src=templates/sites-templates/{{ item }} dest=/usr/local/etc/nginx/sites-templates/
   with_items:
     - php.conf
     - symfony.conf
     - wordpress.conf
-
 - file: path={{ project_sources_path }} state=directory group=staff recurse=no

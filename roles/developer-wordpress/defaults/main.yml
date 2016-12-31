@@ -1,8 +1,0 @@
----
-brew_taps: []
-brew_packages:
-  - wp-cli
-brew_packages_with_opt: []
-gem_packages: []
-cask_packages: []
-npm_packages: []

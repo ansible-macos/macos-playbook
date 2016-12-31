@@ -1,15 +1,11 @@
 ---
-brew_taps: []
-brew_packages:
+default_brew_packages:
   - n
-brew_packages_with_opt:
-  - pkg: jmeter
-    opts: with-plugins
-gem_packages:
+  - name: jmeter
+    options: with-plugins
+default_gem_packages:
   - sass
-# cask_packages:
-#   - screaming-frog-seo-spider
-npm_packages:
+default_npm_packages:
   - less
   - gulp
   - grunt

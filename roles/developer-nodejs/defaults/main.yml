@@ -1,7 +1,5 @@
 ---
-brew_taps: []
-brew_packages:
+default_brew_packages:
   - node
-npm_packages:
+default_npm_packages:
   - trymodule
-gem_packages: []
