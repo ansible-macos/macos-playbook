@@ -1,7 +1,13 @@
 ---
 brew_taps: []
+brew_taps_excludes: []
 brew_packages: []
+brew_excludes: []
 cask_packages: []
+cask_excludes: []
 pip_packages: []
+pip_excludes: []
 gem_packages: []
+gem_excludes: []
 npm_packages: []
+npm_excludes: []

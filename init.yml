@@ -9,8 +9,7 @@
     - role: ansible-macos.homebrew
     - role: ansible-macos.settings
     - role: developer-common
-    # - role: developer-terminal
-    # - role: developer-go
+    - role: developer-terminal
     # - role: developer-nginx
     # - role: developer-atom
     # - role: developer-php

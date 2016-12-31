@@ -3,21 +3,21 @@
     name: "{{ item.name|default(item) }}"
     state: "{{ item.state|default('present') }}"
     url: "{{ item.url|default(omit) }}"
-  with_items: "{{ brew_taps }}"
+  with_items: "{{ brew_taps|difference(brew_taps_excludes)|join(',') }}"
 - homebrew:
     name: "{{ item.name|default(item) }}"
     state: "{{ item.state|default('present') }}"
     options: "{{ item.options|default(omit) }}"
-  with_items: "{{ brew_packages }}"
+  with_items: "{{ brew_packages|difference(brew_excludes)|join(',') }}"
 - homebrew_cask:
     name: "{{ item.name|default(item) }}"
     state: "{{ item.state|default('present') }}"
     options: "{{ item.options|default(omit) }}"
-  with_items: "{{ cask_packages }}"
+  with_items: "{{ cask_packages|difference(cask_packages_excludes)|join(',') }}"
 - npm:
     name: "{{ item.name|default(item) }}"
     global: "{{ item.global|default('yes') }}"
-  with_items: "{{ npm_packages }}"
+  with_items: "{{ npm_packages|difference(npm_packages_excludes)|join(',') }}"
 - pip:
     name: "{{ item.name|default(item) }}"
     state: "{{ item.state|default('present') }}"
@@ -25,7 +25,7 @@
     extra_args: "{{ item.extra_args|default(omit) }}"
     executable: "{{ item.executable|default(omit) }}"
     requirements: "{{ item.requirements|default(omit) }}"
-  with_items: "{{ pip_packages }}"
+  with_items: "{{ pip_packages|difference(pip_packages_excludes)|join(',') }}"
 - gem:
     name: "{{ item.name|default(item) }}"
     state: "{{ item.state|default('present') }}"
@@ -34,4 +34,4 @@
     executable: "{{ item.executable|default(omit) }}"
     pre_release: "{{ item.pre_release|default(omit) }}"
     repository: "{{ item.repository|default(omit) }}"
-  with_items: "{{ gem_packages }}"
+  with_items: "{{ gem_packages|difference(gem_packages_excludes)|join(',') }}"
