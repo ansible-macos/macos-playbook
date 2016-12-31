@@ -2,7 +2,7 @@
 default_brew_taps:
   - caskroom/fonts
   - thoughtbot/formulae
-default_rew_packages:
+default_brew_packages:
   - zsh
   - the_silver_searcher # Command line searcher
   - pick # Fuzzy finder command line tool to select options
