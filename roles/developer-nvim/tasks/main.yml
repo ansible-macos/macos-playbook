@@ -1,7 +1,4 @@
 ---
-# environment:
-#   OPENSSL_INCLUDE_DIR: /usr/local/Cellar/openssl/1.0.2e_1/include
-#   OPENSSL_ROOT_DIR: /usr/local/Cellar/openssl/1.0.2e_1/
 - name: Install the homebrew packages
   homebrew: name={{ item }} state=latest
   with_items: brew_packages
@@ -16,4 +13,7 @@
 - name: Setup vim-plug
   command: curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+# environment:
+#   OPENSSL_INCLUDE_DIR: /usr/local/Cellar/openssl/1.0.2e_1/include
+#   OPENSSL_ROOT_DIR: /usr/local/Cellar/openssl/1.0.2e_1/
 # @todo chmod 755 to -R with sudo ~/.local/share/nvim

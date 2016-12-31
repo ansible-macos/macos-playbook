@@ -1,17 +1,17 @@
 ---
-brew_taps: []
-npm_packages:
+default_brew_taps: []
+default_npm_packages:
   - dockerlint
   - eslint
   - yaml-js
   - csslint
-brew_packages:
+default_brew_packages:
   - node
-cask_packages:
+default_cask_packages:
   - atom
   - font-inconsolata
   - font-source-code-pro
-atom_packages:
+default_atom_packages:
   - atom-terminal
   - project-manager
   - atomatigit

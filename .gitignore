@@ -1,4 +1,3 @@
 .DS_Store
-roles/osxc.*
 *.retry
 node_modules

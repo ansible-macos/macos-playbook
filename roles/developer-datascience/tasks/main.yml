@@ -20,5 +20,5 @@
   homebrew_cask: name={{ item }}
   with_items: cask_packages
 
-- name: Copy php aliases
+- name: Copy aliases
   template: src=templates/aliases/data.science.sh dest=~/.zsh/aliases/data.science.sh

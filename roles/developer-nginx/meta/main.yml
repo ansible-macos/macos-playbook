@@ -1,18 +1,22 @@
 ---
 galaxy_info:
-  author: Luis Hdez
+  author: Luis Hdez <luis.munoz.hdez@gmail.com>
   description: ~
   company: wobblecode
   license: MIT
-  min_ansible_version: 1.2
+  min_ansible_version: 2.1
   platforms:
   - name: MacOSX
     versions:
     - 10.9
     - 10.10
     - 10.11
+    - 10.12
   categories:
-    - development
+    - developer
     - packaging
 dependencies:
-- osxc.packages
+  - role: ansible-macos.packages
+    brew_taps: "{{ default_brew_taps }}"
+    brew_packages: "{{ default_brew_packages }}"
+    cask_packages: "{{ default_cask_packages }}"
