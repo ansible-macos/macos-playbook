@@ -12,6 +12,7 @@ default_cask_packages:
   - font-source-code-pro
 default_atom_packages:
   - set-syntax
+  - sublime-style-column-selection
   - atom-terminal
   - atomatigit
   - ask-stack
