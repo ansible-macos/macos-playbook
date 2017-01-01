@@ -11,6 +11,7 @@ default_cask_packages:
   - font-inconsolata
   - font-source-code-pro
 default_atom_packages:
+  - atom-vim-mode-plus
   - set-syntax
   - sublime-style-column-selection
   - atom-terminal
