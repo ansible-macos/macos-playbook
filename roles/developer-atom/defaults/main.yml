@@ -12,7 +12,8 @@ default_cask_packages:
   - font-source-code-pro
 default_atom_packages:
   - atom-terminal
-  - project-manager
+  - atomatigit
+  - ask-stack
   - trailing-spaces
   - auto-detect-indentation
   - highlight-selected
@@ -22,18 +23,15 @@ default_atom_packages:
   - editorconfig
   - emmet
   - pigments
+  - api-workbench
   - file-icons
   - tabularize
-  - atomatigit
-  - api-workbench
-  - docblockr
-  - react
-  - es6-javascript
   - language-docker
   - language-twig
   - language-diff
   - language-nginx
   - behat-atom
+  - docblockr
   - autocomplete-php
   - atom-autocomplete-php
   - atom-symfony2
@@ -45,7 +43,10 @@ default_atom_packages:
   - linter-js-yaml
   - linter-htmlhint
   - linter-csslint
+  - react
   - linter-eslint
+  - es6-javascript
+  - atom-ternjs
   - linter-docker
   - language-r
   - autocomplete-R
