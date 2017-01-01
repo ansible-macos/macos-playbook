@@ -1,6 +1,6 @@
 - name: Setup plugin for atom
   command: apm install {{ item }}
-  with_items: default_atom_packages
+  with_items: "{{ default_atom_packages }}"
 - name: Setup atom config
   template: src=templates/atom/config.cson dest=~/.atom/config.cson
 - name: Setup atom init

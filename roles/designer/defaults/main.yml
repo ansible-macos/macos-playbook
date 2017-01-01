@@ -1,7 +1,5 @@
 ---
-brew_taps: []
-brew_packages: []
-cask_packages:
+default_cask_packages:
   - sketch
   - sketch-toolbox
   - origami-studio
