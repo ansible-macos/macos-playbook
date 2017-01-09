@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  author: Luis Hdez <luis.munoz.hdez@gmail.com>
+  description: Installs homebrew
+  company: wobblecode
+  license: MIT
+  min_ansible_version: 2.1
+  platforms:
+  - name: MacOSX
+    versions:
+    - 10.9
+    - 10.10
+    - 10.11
+    - 10.12
+  categories:
+    - developer
+    - packaging
+    - homebrew

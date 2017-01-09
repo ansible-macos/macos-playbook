@@ -1,0 +1,17 @@
+---
+galaxy_info:
+  author: Luis Hdez <luis.munoz.hdez@gmail.com>
+  description: Helper to manage multiple common packages in MacOS
+  company: wobblecode
+  license: MIT
+  min_ansible_version: 2.1
+  platforms:
+  - name: MacOSX
+    versions:
+    - 10.9
+    - 10.10
+    - 10.11
+    - 10.12
+  categories: [developer, packaging, homebrew, npm, gem, pip]
+dependencies:
+  - role: ansible-macos.homebrew
