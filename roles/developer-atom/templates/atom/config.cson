@@ -86,7 +86,7 @@
     jsYamlExecutablePath: "/usr/local/bin/js-yaml"
   "linter-jshint": {}
   "linter-php":
-    phpExecutablePath: "/usr/local/opt/php56/bin/php"
+    phpExecutablePath: "/usr/local/bin/php"
   "linter-phpcs":
     executablePath: "/usr/local/bin/phpcs"
     phpcsExecutablePath: "/usr/local/bin/phpcs"
