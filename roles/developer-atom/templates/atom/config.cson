@@ -5,8 +5,11 @@
       "vendor/autoload.php"
       "app/Symfony/vendor/autoload.php"
     ]
-    binPhp: "/usr/local/opt/php56/bin/php"
+    binPhp: "/usr/local/bin/php"
     classMapFiles: [
+      "app/vendor/composer/autoload_classmap.php"
+      "app/symfony/vendor/composer/autoload_classmap.php"
+      "app/app/vendor/composer/autoload_classmap.php"
       "app/Symfony/vendor/composer/autoload_classmap.php"
       "vendor/composer/autoload_classmap.php"
     ]
