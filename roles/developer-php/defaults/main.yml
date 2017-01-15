@@ -17,23 +17,23 @@ default_php_brew:
   - icu4c
   - composer
   - blackfire-agent
-  - name: php70
+  - name: php71
     options: "without-apache,with-fpm,build-from-source"
-  - name: php70-redis
+  - name: php71-redis
     options: "HEAD,build-from-source"
-  - name: php70-memcached
+  - name: php71-memcached
     options: "HEAD,build-from-source"
-  - name: php70-ssh2
+  - name: php71-ssh2
     options: "HEAD,build-from-source"
-  - name: php70-yaml
+  - name: php71-yaml
     options: "HEAD,build-from-source"
-  - php70-apcu
-  - php70-apcu-bc
-  - php70-oauth
-  - php70-amqp
-  - php70-mongodb
-  - php70-ssh2
-  - php70-uuid
-  - php70-xdebug
-  - php70-v8js
-  - blackfire-php70
+  - php71-apcu
+  - php71-apcu-bc
+  - php71-oauth
+  - php71-amqp
+  - php71-mongodb
+  - php71-ssh2
+  - php71-uuid
+  - php71-xdebug
+  - php71-v8js
+  - blackfire-php71
