@@ -43,6 +43,8 @@ alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && kil
 alias disableScreenShadow="defaults write com.apple.screencapture disable-shadow -bool true"
 alias enableScreenShadow="defaults write com.apple.screencapture disable-shadow -bool false"
 
-# Audio alias
+# Media alias
+alias youtube.mp3="youtube-dl -x --audio-format mp3 --audio-quality 0 "
+alias youtube.wav="youtube-dl -x --audio-format mp3 --audio-quality 0 "
 alias flac2mp3="for f in *.flac; do flac -cd "$f" | lame -b 320 - "${f%.*}.mp3"; done"
 alias flac2alac="for f in *.flac; do avconv -i "$f" -c:a alac "${f%.flac}.m4a"; done"
