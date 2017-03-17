@@ -12,6 +12,7 @@ default_npm_packages:
   - grunt-cli
   - uglify-js
   - bower
+  - npm-check-updates
   - yo
   - mversion
   - psi
