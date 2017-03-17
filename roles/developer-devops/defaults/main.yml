@@ -5,6 +5,7 @@ default_npm_packages:
 default_brew_packages:
   - python
   - certbot
+  - dehydrated
   - ruby
   - docker
   - s3cmd
