@@ -4,6 +4,7 @@ default_npm_packages:
   - letsencrypt-cli
 default_brew_packages:
   - python
+  - certbot
   - ruby
   - docker
   - s3cmd
