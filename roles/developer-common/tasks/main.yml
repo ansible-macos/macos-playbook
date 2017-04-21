@@ -1,8 +1,17 @@
 - name: Setup hg VCS
   template: src=templates/hg/hgrc dest=~/.hgrc
+
 - name: Copy global gitconfig
   template: src=templates/git/gitconfig dest=~/.gitconfig
+
 - name: Copy global gitignore
   template: src=templates/git/gitignore dest=~/.gitignore
+
+- name: Ensure .zsh directory
+  file: path=~/.zsh/ state=directory
+
+- name: Ensure .zsh aliases directory
+  file: path=~/.zsh/aliases/ state=directory
+
 - name: Copy git aliases
   template: src=templates/aliases/git.sh dest=~/.zsh/aliases/git.sh

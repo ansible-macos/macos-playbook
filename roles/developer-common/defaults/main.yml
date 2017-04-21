@@ -23,7 +23,7 @@ default_cask_packages:
   - discord
   - sourcetree
   - sequel-pro
-  - mongochef
+  - studio-3t
   - cyberduck
   - rdm
   - font-hasklig

@@ -1,16 +1,23 @@
 ---
 - name: Install zsh from repository
   git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh/
+
 - file: path=~/.zsh state=directory mode=0755
+
 - file: path=~/.zsh/aliases state=directory mode=0755
+
 - name: Copy zshrc
   template: src=templates/zsh/zshrc dest=~/.zshrc
+
 - name: Copy zsh_aliases
   template: src=templates/zsh/zsh_aliases dest=~/.zsh/aliases/common
+
 - name: Copy env_common
   template: src=templates/env_common dest=~/.env_common
+
 - name: Make zsh as default terminal
   command: chsh -s /bin/zsh
+  become: yes
 
 # @todo Setup terminal Theme
 # @todo symlink ssh keys from dropbox, S3 or iCloud

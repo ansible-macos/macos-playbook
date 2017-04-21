@@ -25,7 +25,7 @@ Use the next commands to install ansible and run the playbooks
 
 ### Run the playbook
 
-    ansible-playbook init.yml
+    ansible-playbook init.yml --ask-become-pass
 
 ## Common problems
 

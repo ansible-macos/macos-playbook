@@ -4,7 +4,7 @@ default_brew_taps:
   - homebrew/dupes
   - homebrew/versions
   - blackfireio/homebrew-blackfire
-default_php_brew:
+default_brew_packages:
   - phpbrew
   - php-code-sniffer
   - php-cs-fixer
@@ -20,7 +20,6 @@ default_php_brew:
   - name: php71
     options: "without-apache,with-fpm,build-from-source"
   - name: php71-redis
-    options: "HEAD,build-from-source"
   - name: php71-memcached
     options: "HEAD,build-from-source"
   - name: php71-ssh2

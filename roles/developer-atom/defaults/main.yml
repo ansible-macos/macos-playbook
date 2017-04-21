@@ -19,7 +19,7 @@ default_atom_packages:
   - ask-stack
   - trailing-spaces
   - auto-detect-indentation
-  - highlight-selecteda
+  - highlight-selected
   - highlight-bad-chars
   - less-than-slash
   - quick-editor
