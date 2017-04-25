@@ -1,11 +1,21 @@
 - name: Setup plugin for atom
   command: apm install {{ item }}
   with_items: "{{ default_atom_packages }}"
+
 - name: Setup atom config
   template: src=templates/atom/config.cson dest=~/.atom/config.cson
+
 - name: Setup atom init
   template: src=templates/atom/init.coffee dest=~/.atom/init.coffee
+
 - name: Setup atom keymap
   template: src=templates/atom/keymap.cson dest=~/.atom/keymap.cson
+
 - name: Setup atom styles
   template: src=templates/atom/styles.less dest=~/.atom/styles.less
+
+- name: Download atom schema handler
+  unarchive:
+    src: https://github.com/WizardOfOgz/atom-handler/releases/download/1.1.2/atom-handler.app.zip
+    dest: /Applications
+    remote_src: true
