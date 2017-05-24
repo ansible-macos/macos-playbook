@@ -6,6 +6,7 @@
     date_timezone: Europe/Madrid
     project_sources_path: /Volumes/work-data/sources/
   roles:
+    - role: elliotweiser.osx-command-line-tools
     - role: ansible-macos.homebrew
     - role: ansible-macos.settings
     - role: developer-common
