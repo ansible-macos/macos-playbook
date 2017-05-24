@@ -5,6 +5,7 @@
     user_name: Luis Hdez
     date_timezone: Europe/Madrid
     project_sources_path: /Volumes/work-data/sources/
+    cask_packages: [soundflower, soundflowerbed]
   roles:
     - role: elliotweiser.osx-command-line-tools
     - role: ansible-macos.homebrew
@@ -19,3 +20,4 @@
     - role: developer-atom
     - role: developer-nginx
     - role: developer-nvim
+    - role: ansible-macos.packages
