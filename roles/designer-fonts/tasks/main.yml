@@ -1,0 +1,16 @@
+---
+  default_cask_packages:
+    - font-raleway
+    - font-raleway-dtos
+    - font-droid-sans
+    - font-droid-sans-mono
+    - font-lato
+    - font-open-sans
+    - font-montserrat
+    - font-proxima-nova
+    - font-pt-sans
+    - font-roboto
+    - font-robot-slab
+    - font-ubuntu
+    - font-titillium
+    - font-walkaway
