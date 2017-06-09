@@ -5,3 +5,4 @@ export DEP_OPENSSL_INCLUDE=/usr/local/opt/openssl/include
 export VISUAL=atom
 export EDITOR=vim
 export SOURCES={{ project_sources_path }}
+export DOCKER_ID_USER={{ docker_hub_user }}

@@ -3,6 +3,8 @@
   vars:
     user_email: luis.munoz.hdez@gmail.com
     user_name: Luis Hdez
+    docker_hub_user: luishdez
+    github_user: luishdez
     date_timezone: Europe/Madrid
     project_sources_path: /Volumes/work-data/sources/
     cask_packages: [soundflower, soundflowerbed]
