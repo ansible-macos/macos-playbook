@@ -11,14 +11,4 @@
 #     console.log "Saved! #{editor.getPath()}"
 {extname} = require 'path'
 
-fileTypes =
-  '.swig' : 'text.html.twig'
-
-atom.workspace.observeTextEditors (editor) ->
-  scopeName = fileTypes[extname editor.getPath()]
-  return unless scopeName?
-  g =  atom.grammars.grammarForScopeName scopeName
-  return unless g?
-  editor.setGrammar g
-
 process.env.PATH = ["/usr/local/bin", process.env.PATH].join(":")
