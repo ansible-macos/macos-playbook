@@ -13,6 +13,7 @@ default_brew_packages:
   - mysql
   - redis
   - letsencrypt
+  - qlvideo
 default_cask_packages:
   - google-chrome
   - firefox
@@ -28,3 +29,12 @@ default_cask_packages:
   - rdm
   - font-hasklig
   - font-source-code-pro
+  - qlcolorcode # quicklook plugin
+  - qlstephen # quicklook plugin
+  - qlmarkdown # quicklook plugin
+  - quicklook-json # quicklook plugin
+  - qlprettypatch # quicklook plugin
+  - quicklook-csv # quicklook plugin
+  - betterzipql # quicklook plugin
+  - qlimagesize # quicklook plugin
+  - quicklook-pat # quicklook plugin
