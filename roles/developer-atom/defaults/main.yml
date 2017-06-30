@@ -15,7 +15,6 @@ default_atom_packages:
   - set-syntax
   - sublime-style-column-selection
   - atom-terminal
-  - atomatigit
   - ask-stack
   - trailing-spaces
   - auto-detect-indentation
