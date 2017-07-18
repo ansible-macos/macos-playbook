@@ -45,10 +45,9 @@ default_atom_packages:
   - linter-js-yaml
   - linter-htmlhint
   - linter-csslint
-  - react
   - linter-eslint
-  - es6-javascript
   - atom-ternjs
+  - language-babel
   - linter-docker
   - language-r
   - autocomplete-R

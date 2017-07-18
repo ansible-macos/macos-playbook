@@ -1,1 +1,5 @@
 # https://github.com/chriskempson/tomorrow-theme
+
+# mkdir -p ~/Library/Application\ Support/Avian/Pristine\ Copy/Bundles
+# cd ~/Library/Application\ Support/Avian/Pristine\ Copy/Bundles
+# git clone git://github.com/chriskempson/base16-textmate.git Base16.tmbundle

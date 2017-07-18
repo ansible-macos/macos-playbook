@@ -1,3 +1,4 @@
+// https://github.com/atom/atom/blob/master/static/variables/ui-variables.less
 
 atom-panel-container.left,
 atom-panel-container.right {
@@ -64,22 +65,42 @@ atom-pane-container atom-pane .item-views {
     border-bottom: 1px solid #2B3038 !important;
 }
 
-.tab-bar {
-  background: #343945;
-  box-shadow: inset 0 -1px 0 #31353C;
-}
+.theme-one-dark-ui {
+  atom-dock .tab-bar .tab.active {
+      background-color: #343945;
+  }
 
-.tab-bar .tab .title {
-  -webkit-mask: none;
-}
+  .atom-dock-inner.atom-dock-open.left {
+        border-right: 1px solid #31353C;
+  }
 
-.status-bar {
-  font-size: 1em;
-  height: 2.625em;
-  line-height: 2.625em;
-  background-color: #343945;
-}
+  .tab-bar {
+    font-size: 13px;
+    background: #343945;
+    box-shadow: inset 0 -1px 0 #31353C;
+  }
 
+  .tab-bar .tab {
+    background-color: #343945;
+    border-left: 1px solid #2a2e35;
+  }
+
+  .tab-bar .tab:first-child {
+    border-left: none;
+  }
+
+  .tab-bar .tab:last-of-type {
+      box-shadow: 1px 0 0 #2a2e35;
+  }
+
+  .tab-bar .tab .title { -webkit-mask: none; }
+  .tree-view { font-size: 13px;}
+
+  .status-bar {
+    font-size: 12px;
+    background-color: #343945;
+  }
+}
 
 /**
  * Theme
