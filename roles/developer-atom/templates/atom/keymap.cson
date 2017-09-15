@@ -24,7 +24,8 @@
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
 '.workspace':
-  'cmd-shift-c': 'github:toggle-git-tab-focus'
+  'cmd-shift-c': 'github:stage-and-commit'
+  'ctrl-shift-p': 'github:push'
 
 '.github-Panel':
   'shift-enter': 'github:commit'
@@ -35,6 +36,7 @@
 
 '.github-StagingView':
   'c': 'github:commit'
+  's': 'core:confirm'
 
 'atom-text-editor.vim-mode:not(.insert-mode)':
   'g q': 'autoflow:reflow-selection'
