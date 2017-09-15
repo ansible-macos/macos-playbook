@@ -11,4 +11,15 @@
 #     console.log "Saved! #{editor.getPath()}"
 {extname} = require 'path'
 
-process.env.PATH = ["/usr/local/bin", process.env.PATH].join(":")
+# process.env.PATH = ["/usr/local/bin", process.env.PATH].join(":")
+
+atom.commands.add '.workspace', 'github:stage-and-commit', ->
+  workspace = atom.views.getView atom.workspace
+  atom.commands.dispatch(workspace, 'github:toggle-git-tab-focus')
+
+  setTimeout (->
+    github = document.querySelector('.github-Panel')
+    atom.commands.dispatch(github, 'github:stage-all-changes');
+    atom.commands.dispatch(github, 'github:commit');
+    return
+  ), 140

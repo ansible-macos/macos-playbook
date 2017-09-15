@@ -23,6 +23,19 @@
 # This file uses CoffeeScript Object Notation (CSON).
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
+'.workspace':
+  'cmd-shift-c': 'github:toggle-git-tab-focus'
+
+'.github-Panel':
+  'shift-enter': 'github:commit'
+  'cmd-shift-d': 'github:discard-all-changes'
+  'shift-c': 'github:commit'
+  'shift-s': 'github:stage-all-changes'
+  'shift-u': 'github:unstage-all-changes'
+
+'.github-StagingView':
+  'c': 'github:commit'
+
 'atom-text-editor.vim-mode:not(.insert-mode)':
   'g q': 'autoflow:reflow-selection'
 
