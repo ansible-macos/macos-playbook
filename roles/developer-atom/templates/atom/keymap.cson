@@ -30,13 +30,14 @@
 '.github-Panel':
   'shift-enter': 'github:commit'
   'cmd-shift-d': 'github:discard-all-changes'
-  'shift-c': 'github:commit'
-  'shift-s': 'github:stage-all-changes'
-  'shift-u': 'github:unstage-all-changes'
 
 '.github-StagingView':
+  'shift-c': 'github:commit'
   'c': 'github:commit'
   's': 'core:confirm'
+  'u': 'core:confirm'
+  'shift-s': 'github:stage-all-changes'
+  'shift-u': 'github:unstage-all-changes'
 
 'atom-text-editor.vim-mode:not(.insert-mode)':
   'g q': 'autoflow:reflow-selection'
