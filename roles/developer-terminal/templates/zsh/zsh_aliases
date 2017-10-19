@@ -21,11 +21,12 @@ alias ph='$(history | cut -c8- | sort -u | pick)'
 alias pcd='cd $(find . -type d | pick)'
 alias pgcb='git checkout $(git branch | cut -c 3- | pick)='
 alias pso='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && clear'
-alias psv='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && mvim'
+alias psv='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && nvim'
 alias psa='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && atom .'
 
-# Common
+# Common & Utilities
 alias ssh.key="cat ~/.ssh/id_rsa.pub; cat ~/.ssh/id_rsa.pub | pbcopy"
+alias rebed="kill -9 `pgrep SoundflowerBed`"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
