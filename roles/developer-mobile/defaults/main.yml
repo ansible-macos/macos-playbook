@@ -1,0 +1,7 @@
+---
+default_npm_packages: []
+default_brew_packages: []
+default_gem_packages: []
+default_pip_packages: []
+default_cask_packages:
+  - fastlane
