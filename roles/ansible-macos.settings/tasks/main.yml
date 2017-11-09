@@ -8,6 +8,8 @@
   command: defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 - name: "Show the ~/Library folder"
   command: chflags nohidden ~/Library
+- name: "Don't Ask confirmation for change extension"
+  command: defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 # copy wallpaper file to -> ~/.wallpapers/
 # osascript -e 'tell application "Finder" to set desktop picture to POSIX file "~/.wallpapers/roppet.png"'
