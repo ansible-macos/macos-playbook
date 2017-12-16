@@ -4,6 +4,7 @@
     autoloadPaths: [
       "vendor/autoload.php"
       "app/Symfony/vendor/autoload.php"
+      "app/vendor/autoload.php"
     ]
     binPhp: "/usr/local/bin/php"
     classMapFiles: [
@@ -17,9 +18,14 @@
     _analyticsUserId: "db83172e-7699-4357-879b-1812302b5f6e"
   "atom-symfony2":
     console: [
+      "app/bin/console"
+      "app/app/bin/console"
       "app/Symfony/app/console"
     ]
-  "atom-ternjs": {}
+  "atom-ternjs":
+    inlineFnCompletionDocumentation: true
+    useSnippets: true
+    useSnippetsAndFunction: true
   atomatigit: {}
   "autocomplete-plus": {}
   core:
@@ -45,6 +51,10 @@
       "atom-beautify"
       "atom-html-preview"
       "php-debug"
+      "quick-editor"
+      "atomatigit"
+      "api-workbench"
+      "linter-jscs"
     ]
     excludeVcsIgnoredPaths: false
     followSymlinks: false
@@ -55,12 +65,15 @@
       "Thumbs.db"
     ]
     projectHome: "/Volumes/work-data/sources"
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "atom-base16-wobble-dark-syntax"
+      "atom-base16-wobblecode-dark-syntax"
     ]
+  diagrams:
+    previewWidth: 520
   editor:
-    fontFamily: "Source Code Pro"
+    fontFamily: "SF Mono"
     invisibles: {}
   emmet: {}
   "exception-reporting":
@@ -72,12 +85,14 @@
   "fuzzy-finder": {}
   "imdone-atom": {}
   linter:
-    errorPanelHeight: 22
+    disabledProviders: [
+      "PHPMD"
+      "PHPCS"
+    ]
     ignoredLinterErrors: [
       "phpcs"
       "phpmd"
     ]
-    showErrorTabLine: true
     subtleLinterErrors: [
       "php"
     ]
@@ -93,7 +108,8 @@
     standard: "PSR2"
   "linter-phpmd":
     phpmdExecutablePath: "/usr/local/bin/phpmd"
-    rulesets: "cleancode,controversial,design,unusedcode"
+  "linter-ui-default":
+    panelHeight: 203
   "markdown-themeable-pdf": {}
   "one-dark-ui": {}
   "php-cs-fixer":
@@ -114,8 +130,15 @@
   "tree-view":
     hideIgnoredNames: true
   "vim-mode": {}
+  "vim-mode-plus": {}
   welcome:
     showOnStartup: false
+".php.source":
+  editor:
+    tabLength: 4
+".shell.source":
+  editor:
+    tabLength: 4
 ".js.source.twig":
   editor:
     scrollPastEnd: false
