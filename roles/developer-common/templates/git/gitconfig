@@ -83,7 +83,7 @@
 [url "git://gist.github.com/"]
     insteadOf = "gist:"
 [push]
-    default = matching
+    default = current
 [difftool "sourcetree"]
     cmd = opendiff \"$LOCAL\" \"$REMOTE\"
     path =
