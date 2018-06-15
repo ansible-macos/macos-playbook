@@ -1,6 +1,5 @@
 ---
 default_brew_taps:
-  - caskroom/fonts
   - thoughtbot/formulae
 default_brew_packages:
   - zsh

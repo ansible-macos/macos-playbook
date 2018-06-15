@@ -1,7 +1,6 @@
 ---
 default_brew_taps:
   - gapple/services
-  - caskroom/fonts
 default_brew_packages:
   - git
   - git-flow
