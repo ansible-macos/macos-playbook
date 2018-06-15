@@ -12,7 +12,6 @@ default_brew_packages:
   - mysql
   - redis
   - letsencrypt
-  - qlvideo
 default_cask_packages:
   - google-chrome
   - firefox

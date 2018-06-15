@@ -1,4 +1,5 @@
 .DS_Store
 *.retry
+.vscode
 node_modules
 roles/elliotweiser.osx-command-line-tools
