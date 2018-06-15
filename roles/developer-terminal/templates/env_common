@@ -2,7 +2,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export OPENSSL_ROOT_DIR=/usr/local/opt/openssl/
 export OPENSSL_INCLUDE_DIR=/usr/local/opt/openssl/include
 export DEP_OPENSSL_INCLUDE=/usr/local/opt/openssl/include
-export VISUAL=atom
+export VISUAL=code
 export EDITOR=vim
 export SOURCES={{ project_sources_path }}
 export DOCKER_ID_USER={{ docker_hub_user }}
