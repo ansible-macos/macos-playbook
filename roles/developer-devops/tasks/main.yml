@@ -1,6 +1,8 @@
 ---
 - name: Copy docker aliases
   template: src=templates/aliases/docker.sh dest=~/.zsh/aliases/docker.sh
+- name: Copy gitlab aliases
+  template: src=templates/aliases/gitlab.sh dest=~/.zsh/aliases/gitlab.sh
 
 # vagrant plugin install vagrant-hostsupdater
 
