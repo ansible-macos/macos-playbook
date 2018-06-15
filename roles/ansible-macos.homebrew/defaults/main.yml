@@ -7,4 +7,3 @@ homebrew_upgrade_all_packages: no
 homebrew_use_brewfile: true
 homebrew_taps:
   - homebrew/core
-  - caskroom/cask
