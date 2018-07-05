@@ -28,6 +28,9 @@ Thumbs.db
 .idea
 .Rhistory
 *.xcuserstate
+.vscode
+TODO
+TODOS
 
 # Tools
 .phpcomplete_extended
