@@ -1,39 +1,39 @@
 ---
-default_brew_taps:
-  - gapple/services
+default_brew_taps: []
+  # - gapple/services
 default_brew_packages:
   - git
-  - git-flow
-  - mercurial
-  - ctags
+  # - git-flow
+  # - mercurial
+  # - ctags
   - wget
   - httpie
-  - mongodb
-  - mysql
-  - redis
-  - letsencrypt
+  # - mongodb
+  # - mysql
+  # - redis
+  # - letsencrypt
 default_cask_packages:
   - google-chrome
   - firefox
-  - transmission
-  - vlc
-  - skype
-  - slack
-  - discord
-  - rambox
-  - sourcetree
-  - sequel-pro
+  # - transmission
+  # - vlc
+  # - skype
+  # - slack
+  # - discord
+  # - rambox
+  # - sourcetree
+  # - sequel-pro
   - studio-3t
-  - cyberduck
+  # - cyberduck
   - rdm
-  - font-hasklig
-  - font-source-code-pro
-  - qlcolorcode # quicklook plugin
-  - qlstephen # quicklook plugin
-  - qlmarkdown # quicklook plugin
-  - quicklook-json # quicklook plugin
-  - qlprettypatch # quicklook plugin
-  - quicklook-csv # quicklook plugin
-  - betterzipql # quicklook plugin
-  - qlimagesize # quicklook plugin
-  - quicklook-pat # quicklook plugin
+  # - font-hasklig
+  # - font-source-code-pro
+  # - qlcolorcode # quicklook plugin
+  # - qlstephen # quicklook plugin
+  # - qlmarkdown # quicklook plugin
+  # - quicklook-json # quicklook plugin
+  # - qlprettypatch # quicklook plugin
+  # - quicklook-csv # quicklook plugin
+  # - betterzipql # quicklook plugin
+  # - qlimagesize # quicklook plugin
+  # - quicklook-pat # quicklook plugin
