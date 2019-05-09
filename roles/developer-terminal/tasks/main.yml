@@ -19,6 +19,8 @@
   command: chsh -s /bin/zsh
   become: yes
 
+- file: path=~/Library/LaunchAgents state=directory mode=0755
+
 - name: Add launthAgent for ssh-add -A on every boot
   template: src=templates/ssh.add.a.plist dest=~/Library/LaunchAgents/ssh.add.a.plist
 
