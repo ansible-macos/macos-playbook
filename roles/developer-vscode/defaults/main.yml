@@ -1,12 +1,23 @@
 ---
-default_npm_packages:
-  - dockerlint
-  - eslint
-  - yaml-js
-  - csslint
+default_npm_packages: []
 default_brew_packages: []
 default_cask_packages:
   - visual-studio-code
 default_vscode_packages:
+
+  # vscode
   - smlombardi.mariana
+  - laurenttreguier.vscode-simple-icons
+  - eamodio.gitlens
+
+  # js
   - dbaeumer.vscode-eslint
+
+  # php
+  - bmewburn.vscode-intelephense-client
+  - ikappas.phpcs
+  - junstyle.php-cs-fixer
+  - neilbrayfield.php-docblocker
+
+  # docker
+  - peterjausovec.vscode-docker

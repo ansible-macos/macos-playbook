@@ -16,7 +16,7 @@
     - role: developer-terminal
     - role: developer-php
     - role: developer-nodejs
-    # - role: developer-devops
+    - role: developer-vscode
     # - role: developer-web
     # - role: developer-devops
     # - role: developer-datascience
