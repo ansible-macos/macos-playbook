@@ -1,8 +1,8 @@
 ---
 - name: Copy php.ini settings
-  template: src=templates/php.ini dest=/usr/local/etc/php/7.1/conf.d/php.user.ini
+  template: src=templates/php.ini dest=/usr/local/etc/php/7.3/conf.d/php.user.ini
 - name: Copy php.ini settings
-  template: src=templates/ext-xdebug.ini dest=/usr/local/etc/php/7.1/conf.d/ext-xdebug.ini
+  template: src=templates/ext-xdebug.ini dest=/usr/local/etc/php/7.3/conf.d/ext-xdebug.ini
 - name: Set PSR2 as default
   command: phpcs --config-set default_standard PSR2
 - name: Copy php aliases

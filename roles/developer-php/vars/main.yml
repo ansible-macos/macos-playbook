@@ -1,2 +1,3 @@
 ---
 date_timezone: Europe/Madrid
+php_ini_memory_limit: 2048M

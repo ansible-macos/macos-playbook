@@ -1,15 +1,28 @@
 ---
 default_brew_taps:
-  - homebrew/php
-  - homebrew/dupes
-  - homebrew/versions
   - blackfireio/homebrew-blackfire
-default_brew_packages:
+default_brew_packages:  
+  - php73
+  - php73-redis
+  - php73-memcached
+  - php73-ssh2
+  - php73-yaml
+  - php73-apcu
+  - php73-apcu-bc
+  - php73-oauth
+  - php73-amqp
+  - php73-mongodb
+  - php73-ssh2
+  - php73-uuid
+  - php73-xdebug
+  - php73-v8js
+  - blackfire-php73
   - phpbrew
   - php-code-sniffer
   - php-cs-fixer
   - phploc
   - phpmd
+  - phpstan
   - phpcpd
   - behat
   - phpunit
@@ -17,22 +30,3 @@ default_brew_packages:
   - icu4c
   - composer
   - blackfire-agent
-  - name: php71
-    options: "without-apache,with-fpm,build-from-source"
-  - name: php71-redis
-  - name: php71-memcached
-    options: "HEAD,build-from-source"
-  - name: php71-ssh2
-    options: "HEAD,build-from-source"
-  - name: php71-yaml
-    options: "HEAD,build-from-source"
-  - php71-apcu
-  - php71-apcu-bc
-  - php71-oauth
-  - php71-amqp
-  - php71-mongodb
-  - php71-ssh2
-  - php71-uuid
-  - php71-xdebug
-  - php71-v8js
-  - blackfire-php71
