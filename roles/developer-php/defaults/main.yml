@@ -2,31 +2,15 @@
 default_brew_taps:
   - blackfireio/homebrew-blackfire
 default_brew_packages:  
-  - php73
-  - php73-redis
-  - php73-memcached
-  - php73-ssh2
-  - php73-yaml
-  - php73-apcu
-  - php73-apcu-bc
-  - php73-oauth
-  - php73-amqp
-  - php73-mongodb
-  - php73-ssh2
-  - php73-uuid
-  - php73-xdebug
-  - php73-v8js
-  - blackfire-php73
-  - phpbrew
+  - php@7.3
+  - blackfireio/blackfire/blackfire-php73
+  - blackfire-agent
   - php-code-sniffer
   - php-cs-fixer
-  - phploc
-  - phpmd
-  - phpstan
-  - phpcpd
-  - behat
   - phpunit
-  - codeception
-  - icu4c
   - composer
-  - blackfire-agent
+default_pear_packages:  
+  - pecl/redis
+  - pecl/mongodb
+  - pecl/apcu
+  - pecl/xdebug

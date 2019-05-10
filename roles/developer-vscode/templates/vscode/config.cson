@@ -1,0 +1,144 @@
+"*":
+  "PHP-Debug": {}
+  "vscode-autocomplete-php":
+    autoloadPaths: [
+      "vendor/autoload.php"
+      "app/Symfony/vendor/autoload.php"
+      "app/vendor/autoload.php"
+    ]
+    binPhp: "/usr/local/bin/php"
+    classMapFiles: [
+      "app/vendor/composer/autoload_classmap.php"
+      "app/symfony/vendor/composer/autoload_classmap.php"
+      "app/app/vendor/composer/autoload_classmap.php"
+      "app/Symfony/vendor/composer/autoload_classmap.php"
+      "vendor/composer/autoload_classmap.php"
+    ]
+  "vscode-beautify":
+    _analyticsUserId: "db83172e-7699-4357-879b-1812302b5f6e"
+  "vscode-symfony2":
+    console: [
+      "app/bin/console"
+      "app/app/bin/console"
+      "app/Symfony/app/console"
+    ]
+  "vscode-ternjs":
+    inlineFnCompletionDocumentation: true
+    useSnippets: true
+    useSnippetsAndFunction: true
+  vscodeatigit: {}
+  "autocomplete-plus": {}
+  core:
+    audioBeep: false
+    disabledPackages: [
+      "language-swig"
+      "file-type-icons"
+      "file-types"
+      "vscode-color-highlight"
+      "api-blueprint-preview"
+      "vscode-terminal"
+      "javascript-snippets"
+      "git-control"
+      "language-api-blueprint"
+      "linter-tidy"
+      "php-introspector"
+      "terminal-panel"
+      "language-todo"
+      "linter-htmlhint"
+      "markdown-themeable-pdf"
+      "linter-jshint"
+      "vscode-autocomplete-php"
+      "vscode-beautify"
+      "vscode-html-preview"
+      "php-debug"
+      "quick-editor"
+      "vscodeatigit"
+      "api-workbench"
+      "linter-jscs"
+    ]
+    excludeVcsIgnoredPaths: false
+    followSymlinks: false
+    ignoredNames: [
+      ".DS_Store"
+      ".vagrant"
+      "._*"
+      "Thumbs.db"
+    ]
+    projectHome: "/Volumes/work-data/sources"
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "vscode-base16-wobblecode-dark-syntax"
+    ]
+  diagrams:
+    previewWidth: 520
+  editor:
+    fontFamily: "SF Mono"
+    invisibles: {}
+  emmet: {}
+  "exception-reporting":
+    userId: "3ce78e03-e80b-ddcb-0f10-15e50a8b8fc0"
+  "file-icons":
+    onChanges: true
+  "file-types":
+    ".swig$": "text.html.twig"
+  "fuzzy-finder": {}
+  "imdone-vscode": {}
+  linter:
+    disabledProviders: [
+      "PHPMD"
+      "PHPCS"
+    ]
+    ignoredLinterErrors: [
+      "phpcs"
+      "phpmd"
+    ]
+    subtleLinterErrors: [
+      "php"
+    ]
+  "linter-docker": {}
+  "linter-js-yaml":
+    jsYamlExecutablePath: "/usr/local/bin/js-yaml"
+  "linter-jshint": {}
+  "linter-php":
+    phpExecutablePath: "/usr/local/bin/php"
+  "linter-phpcs":
+    executablePath: "/usr/local/bin/phpcs"
+    phpcsExecutablePath: "/usr/local/bin/phpcs"
+    standard: "PSR2"
+  "linter-phpmd":
+    phpmdExecutablePath: "/usr/local/bin/phpmd"
+  "linter-ui-default":
+    panelHeight: 203
+  "markdown-themeable-pdf": {}
+  "one-dark-ui": {}
+  "php-cs-fixer":
+    executablePath: "/usr/local/bin/php-cs-fixer"
+    level: "symfony"
+  "php-debug": {}
+  pigments:
+    groupPaletteColors: "by file"
+    sortPaletteColors: "by name"
+  react: {}
+  "todo-show":
+    findTheseRegexes: [
+      "@todos"
+      "/ @TODO:?(.+$)/gi"
+      "TODOS"
+      "/ TODO:?(.+$)/gi"
+    ]
+  "tree-view":
+    hideIgnoredNames: true
+  "vim-mode": {}
+  "vim-mode-plus": {}
+  welcome:
+    showOnStartup: false
+".php.source":
+  editor:
+    tabLength: 4
+".shell.source":
+  editor:
+    tabLength: 4
+".js.source.twig":
+  editor:
+    scrollPastEnd: false

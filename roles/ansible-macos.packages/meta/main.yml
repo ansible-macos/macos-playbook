@@ -12,6 +12,6 @@ galaxy_info:
     - 10.10
     - 10.11
     - 10.12
-  categories: [developer, packaging, homebrew, npm, gem, pip]
+  categories: [developer, packaging, homebrew, npm, gem, pip, pear]
 dependencies:
   - role: ansible-macos.homebrew

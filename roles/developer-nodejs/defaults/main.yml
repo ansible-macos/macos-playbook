@@ -1,7 +1,5 @@
 ---
 default_brew_packages:
   - node
-default_npm_packages:
-  - trymodule
-default_cask_packages:
-  - reactotron
+default_npm_packages: [] 
+default_cask_packages: []

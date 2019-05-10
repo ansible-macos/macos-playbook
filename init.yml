@@ -14,9 +14,9 @@
     - role: ansible-macos.settings
     - role: developer-common
     - role: developer-terminal
+    - role: developer-php
+    - role: developer-nodejs
     # - role: developer-devops
-    # - role: developer-php
-    # - role: developer-nodejs
     # - role: developer-web
     # - role: developer-devops
     # - role: developer-datascience

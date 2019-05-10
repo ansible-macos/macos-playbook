@@ -1,0 +1,12 @@
+---
+default_npm_packages:
+  - dockerlint
+  - eslint
+  - yaml-js
+  - csslint
+default_brew_packages: []
+default_cask_packages:
+  - visual-studio-code
+default_vscode_packages:
+  - smlombardi.mariana
+  - dbaeumer.vscode-eslint

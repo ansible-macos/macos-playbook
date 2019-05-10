@@ -1,0 +1,9 @@
+- name: extensions for vscode
+  shell: echo "code --install-extension {{ item }}"
+  register: vscode_result
+  changed_when: "'already installed' not in vscode_result.stdout"
+  with_items:
+    - "{{ default_vscode_packages }}"
+
+# $ cd /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/
+# $ cp *.otf ~/Library/Fonts/

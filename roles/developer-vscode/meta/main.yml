@@ -8,15 +8,16 @@ galaxy_info:
   platforms:
   - name: MacOSX
     versions:
-    - 10.9
-    - 10.10
     - 10.11
     - 10.12
+    - 10.13
+    - 10.14
   categories:
     - developer
     - packaging
+    - vscode
 dependencies:
   - role: ansible-macos.packages
-    brew_taps: "{{ default_brew_taps }}"
+    npm_packages: "{{ default_npm_packages }}"
     brew_packages: "{{ default_brew_packages }}"
-    pear_packages: "{{ default_pear_packages }}"
+    cask_packages: "{{ default_cask_packages }}"
