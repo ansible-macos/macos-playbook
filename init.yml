@@ -5,9 +5,14 @@
     user_name: Luis Hdez
     docker_hub_user: luishdez
     github_user: luishdez
+    gitlab_user: luishdez
     date_timezone: Europe/Madrid
     project_sources_path: /Volumes/work-data/sources/
-    cask_packages: [soundflower, soundflowerbed]
+    cask_packages: 
+      - soundflower
+      - soundflowerbed
+      - slack
+      - discord
   roles:
     - role: elliotweiser.osx-command-line-tools
     - role: ansible-macos.homebrew
@@ -17,10 +22,4 @@
     - role: developer-php
     - role: developer-nodejs
     - role: developer-vscode
-    # - role: developer-web
-    # - role: developer-devops
-    # - role: developer-datascience
-    # - role: developer-atom
-    # - role: developer-nginx
-    # - role: developer-nvim
     - role: ansible-macos.packages

@@ -1,4 +1,5 @@
 ---
+vscode_setup_sf_font: true
 default_npm_packages: []
 default_brew_packages: []
 default_cask_packages:
