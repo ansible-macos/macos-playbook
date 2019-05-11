@@ -1,18 +1,15 @@
 ---
 default_npm_packages:
-  - n
   - letsencrypt-cli
 default_brew_packages:
-  - python
+  - python3
   - certbot
   - dehydrated
   - ruby
-  - docker
   - s3cmd
   - libmaxminddb
   - tor
   - privoxy
-  - docker-machine
 default_gem_packages:
   - librarian-chef
   - knife-solo
@@ -23,3 +20,4 @@ default_pip_packages:
 default_cask_packages:
   - virtualbox
   - vagrant
+  - docker

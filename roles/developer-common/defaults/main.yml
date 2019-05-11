@@ -1,20 +1,16 @@
 ---
 default_brew_taps: []
-  # - gapple/services
 default_brew_packages:
   - git
-  # - git-flow
-  # - mercurial
-  # - ctags
-  - wget
   - httpie
-  # - mongodb
-  # - mysql
-  # - redis
-  # - letsencrypt
 default_cask_packages:
   - google-chrome
   - firefox
+  - studio-3t
+  - rdm
+  - sequel-pro
+  - cyberduck
+
   # - transmission
   # - vlc
   # - skype
@@ -22,12 +18,6 @@ default_cask_packages:
   # - discord
   # - rambox
   # - sourcetree
-  # - sequel-pro
-  - studio-3t
-  # - cyberduck
-  - rdm
-  # - font-hasklig
-  # - font-source-code-pro
   # - qlcolorcode # quicklook plugin
   # - qlstephen # quicklook plugin
   # - qlmarkdown # quicklook plugin
