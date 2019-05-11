@@ -15,11 +15,11 @@
       - discord
   roles:
     - role: elliotweiser.osx-command-line-tools
-    - role: ansible-macos.homebrew
-    - role: ansible-macos.settings
-    - role: developer-common
-    - role: developer-terminal
-    - role: developer-php
-    - role: developer-nodejs
+    # - role: ansible-macos.homebrew
+    # - role: ansible-macos.settings
+    # - role: developer-common
+    # - role: developer-terminal
+    # - role: developer-php
+    # - role: developer-nodejs
     - role: developer-vscode
     - role: ansible-macos.packages
