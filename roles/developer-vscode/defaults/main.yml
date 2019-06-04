@@ -9,7 +9,12 @@ default_vscode_packages:
   # vscode
   - smlombardi.mariana
   - laurenttreguier.vscode-simple-icons
+  - chrislajoie.vscode-modelines
   - eamodio.gitlens
+  - wengerk.highlight-bad-chars
+
+  # yaml
+  - redhat.vscode-yaml
 
   # js
   - dbaeumer.vscode-eslint
@@ -22,3 +27,6 @@ default_vscode_packages:
 
   # docker
   - peterjausovec.vscode-docker
+
+  # mongo
+  - ms-azuretools.vscode-cosmosdb
