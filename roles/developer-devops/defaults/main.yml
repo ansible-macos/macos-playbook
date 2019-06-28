@@ -2,6 +2,9 @@
 default_npm_packages:
   - letsencrypt-cli
 default_brew_packages:
+  - helmfile
+  - kubernetes-cli
+  - kubernetes-helm
   - python3
   - certbot
   - dehydrated
@@ -10,10 +13,10 @@ default_brew_packages:
   - libmaxminddb
   - tor
   - privoxy
-default_gem_packages:
-  - librarian-chef
-  - knife-solo
-  - capistrano
+default_gem_packages: []
+  # - librarian-chef
+  # - knife-solo
+  # - capistrano
 default_pip_packages:
   - awscli
   - docker-compose

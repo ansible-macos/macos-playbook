@@ -3,6 +3,11 @@
   template: src=templates/aliases/docker.sh dest=~/.zsh/aliases/docker.sh
 - name: Copy gitlab aliases
   template: src=templates/aliases/gitlab.sh dest=~/.zsh/aliases/gitlab.sh
+- name: Copy k8s
+  template: src=templates/aliases/gitlab.sh dest=~/.zsh/aliases/k8s.sh
+
+# autoload -U +X compinit && compinit
+# autoload -U +X bashcompinit && bashcompinit
 
 # vagrant plugin install vagrant-hostsupdater
 

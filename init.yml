@@ -8,18 +8,19 @@
     gitlab_user: luishdez
     date_timezone: Europe/Madrid
     project_sources_path: /Volumes/work-data/sources/
-    cask_packages: 
+    cask_packages:
       - soundflower
       - soundflowerbed
       - slack
       - discord
   roles:
-    - role: elliotweiser.osx-command-line-tools
-    - role: ansible-macos.homebrew
-    - role: ansible-macos.settings
-    - role: developer-common
-    - role: developer-terminal
-    - role: developer-php
-    - role: developer-nodejs
-    - role: developer-vscode
-    - role: ansible-macos.packages
+    # - role: elliotweiser.osx-command-line-tools
+    # - role: ansible-macos.homebrew
+    # - role: ansible-macos.settings
+    # - role: developer-common
+    # - role: developer-terminal
+    # - role: developer-php
+    # - role: developer-nodejs
+    - role: developer-devops
+    # - role: developer-vscode
+    # - role: ansible-macos.packages

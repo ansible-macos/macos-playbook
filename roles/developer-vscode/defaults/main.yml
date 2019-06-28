@@ -12,6 +12,7 @@ default_vscode_packages:
   - chrislajoie.vscode-modelines
   - eamodio.gitlens
   - wengerk.highlight-bad-chars
+  - stkb.rewrap
 
   # yaml
   - redhat.vscode-yaml
