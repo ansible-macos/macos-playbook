@@ -1,6 +1,7 @@
 ---
 - hosts: all
   vars:
+    cli_lang: en_US.UTF-8
     user_email: luis.munoz.hdez@gmail.com
     user_name: Luis Hdez
     docker_hub_user: luishdez

@@ -1,3 +1,4 @@
+export LANG={{ cli_lang }}
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export OPENSSL_ROOT_DIR=/usr/local/opt/openssl/
 export OPENSSL_INCLUDE_DIR=/usr/local/opt/openssl/include
