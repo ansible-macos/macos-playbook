@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: localhost
   vars:
     cli_lang: en_US.UTF-8
     user_email: luis.munoz.hdez@gmail.com
@@ -10,8 +10,6 @@
     date_timezone: Europe/Madrid
     project_sources_path: /Volumes/work-data/sources/
     cask_packages:
-      - soundflower
-      - soundflowerbed
       - slack
       - discord
   roles:
@@ -19,9 +17,9 @@
     # - role: ansible-macos.homebrew
     # - role: ansible-macos.settings
     # - role: developer-common
-    # - role: developer-terminal
+    - role: developer-terminal
     # - role: developer-php
     # - role: developer-nodejs
-    - role: developer-devops
+    # - role: developer-devops
     # - role: developer-vscode
     # - role: ansible-macos.packages

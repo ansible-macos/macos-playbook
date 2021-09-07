@@ -16,6 +16,6 @@ for f in ~/.env_*; do
 done
 
 ## Source all aliases
-for f in ~/.zsh/aliases/*; do
+for f in ~/.oh-my-zsh/aliases/*; do
    . $f
 done
