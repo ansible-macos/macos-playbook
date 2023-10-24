@@ -5,6 +5,7 @@ default_brew_packages:
   - zsh
   - the_silver_searcher # Command line searcher
   - pick # Fuzzy finder command line tool to select options
+  - commitizen
   - asciinema # Record terminal sessions to asciinema.org
   - youtube-dl # media youtube downloader
   - ffmpeg # media converter
