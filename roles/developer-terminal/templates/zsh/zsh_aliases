@@ -4,7 +4,12 @@ alias dl="cd ~/Downloads"
 alias do="cd ~/Documents"
 alias db="cd ~/Dropbox"
 alias lb="cd ~/Library"
-alias sr="cd $SOURCES"
+
+# Configs
+alias e-zsh="code ~/.oh-my-zsh"
+alias e-nginx="code /opt/homebrew/etc/nginx/"
+alias e-php="code /opt/homebrew/etc/php/"
+alias e-mariadb="code /opt/homebrew/etc/mariadb/"
 
 # Services
 alias h="history"
@@ -22,7 +27,7 @@ alias pcd='cd $(find . -type d | pick)'
 alias pgcb='git checkout $(git branch | cut -c 3- | pick)='
 alias pso='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && clear'
 alias psv='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && nvim'
-alias psa='cd /Volumes/work-data/sources/$(find /Volumes/work-data/sources -type d  -maxdepth 2 -mindepth 2 | cut -c28- | pick) && code .'
+alias psa='cd /Volumes/
 
 # Common & Utilities
 alias ssh.key="cat ~/.ssh/id_rsa.pub; cat ~/.ssh/id_rsa.pub | pbcopy"
