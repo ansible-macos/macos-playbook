@@ -13,5 +13,6 @@ default_brew_packages:
   - lame # media codecs
   - flac # media codecs
 default_cask_packages:
+  - warp
   - font-inconsolata
   - font-source-code-pro

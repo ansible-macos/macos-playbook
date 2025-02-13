@@ -23,7 +23,6 @@
 
 - name: Add launthAgent for ssh-add -A on every boot
   template: src=templates/ssh.add.a.plist dest=~/Library/LaunchAgents/ssh.add.a.plist
-
 # @todo Setup terminal Theme
 # @todo symlink ssh keys from dropbox, S3 or iCloud
 # - name: Ensure 600 for ~/.ssh/id_rsa
