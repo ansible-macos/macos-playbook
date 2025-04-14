@@ -5,6 +5,7 @@ default_brew_packages:
   - zsh
   - the_silver_searcher # Command line searcher
   - pick # Fuzzy finder command line tool to select options
+  - fzf # Fuzzy finder command line tool to select options
   - commitizen
   - asciinema # Record terminal sessions to asciinema.org
   - youtube-dl # media youtube downloader
@@ -12,6 +13,9 @@ default_brew_packages:
   - libav # media codecs
   - lame # media codecs
   - flac # media codecs
+  - yt-dlp # media youtube downloader
+  - kubectl # kubernetes cli
+  - kubectx # kubernetes cli context switcher
 default_cask_packages:
   - warp
   - font-inconsolata
